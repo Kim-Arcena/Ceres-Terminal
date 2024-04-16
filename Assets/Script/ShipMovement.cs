@@ -9,8 +9,11 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKey(KeyCode.UpArrow))
+        {
+            transform.position += Vector3.forward * moveSpeed * Time.deltaTime;
+        }
 
-        //rotations
         if (Input.GetKey(KeyCode.LeftArrow))
         {
             Vector3 currentRotation = transform.rotation.eulerAngles;
