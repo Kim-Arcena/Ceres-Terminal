@@ -17,12 +17,12 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody shipRb;
     private bool isAlive = true;
-    private bool isAccelerating = false;
+    private GameObject tail;
     
 
     private void Start(){
         shipRb = GetComponent<Rigidbody>();
-
+        tail = this.transform.GetChild(1).gameObject;
     }
     private void Update()
     {
@@ -39,6 +39,11 @@ public class PlayerMovement : MonoBehaviour
         {
             shipRb.AddForce(transform.up * acceleration);
             shipRb.velocity = Vector3.ClampMagnitude(shipRb.velocity, maxMoveSpeed);
+            InvokeRepeating("FlickerTail", 0, 0.3f);
+            
+        }else{
+            tail.SetActive(false);
+            CancelInvoke("FlickerTail");
         }
     }
     private void ShipRotation()
@@ -67,6 +72,10 @@ public class PlayerMovement : MonoBehaviour
             bullet.velocity = shipSpeed * shipDirection;
             bullet.AddForce(spawnBullet.up * bulletSpeed, ForceMode.Impulse);
         }
+    }
+    private void FlickerTail()
+    {
+        tail.SetActive(!tail.activeSelf);
     }
 
 }
