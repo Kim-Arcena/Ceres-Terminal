@@ -21,7 +21,7 @@ public class ShipBehavior : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Obstacle"))
         {
-            Instantiate(destroyFx, transform.position, Quaternion.identity);
+            Instantiate(destroyFx, transform.position, transform.rotation);
             Destroy(collision.gameObject);
             Destroy(gameObject);
             

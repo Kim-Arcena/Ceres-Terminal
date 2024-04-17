@@ -61,6 +61,6 @@ public class Asteroids : MonoBehaviour
     }
     void OnDestroy()
     {
-        Instantiate(destroyFx, transform.position, Quaternion.identity); 
+        Instantiate(destroyFx, transform.position, transform.rotation); 
     }
 }
