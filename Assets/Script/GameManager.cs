@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
         int edge = Random.Range(0, 4);
         Vector3 spawnPosition = Vector3.zero;
 
-        Debug.Log("asteroidSize " + asteroidIndex.ToString());
+        Debug.Log("asteroidSize " + spawnPosition);
 
         switch (edge)
         {
