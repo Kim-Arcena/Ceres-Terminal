@@ -136,8 +136,6 @@ GameObject:
   - component: {fileID: 300344181}
   - component: {fileID: 300344182}
   - component: {fileID: 300344183}
-  - component: {fileID: 300344183}
-  - component: {fileID: 300344184}
   m_Layer: 0
   m_Name: Ship
   m_TagString: Untagged
@@ -228,6 +226,9 @@ MonoBehaviour:
   maxMoveSpeed: 400
   rotateSpeed: 200
   acceleration: 50
+  spawnBullet: {fileID: 1098164948}
+  bulletPrefab: {fileID: 8449798723006539125, guid: 2c98ed724d2ed5a44b60e5f8a13cd96c, type: 3}
+  bulletSpeed: 20
 --- !u!114 &300344182
 MonoBehaviour:
   m_ObjectHideFlags: 0
