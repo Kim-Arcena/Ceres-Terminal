@@ -4,16 +4,42 @@ using UnityEngine;
 
 public class BotBehaviour : MonoBehaviour
 {
-    [SerializeField] public float speed = 5f; // Adjust this to control the speed of the enemy ship
-    public Transform player;
+    [SerializeField] public float movementSpeed = 5f;
+    public GameObject bulletPrefab;
+    public Transform firePoint;
+    [SerializeField] public float bulletForce = 500f;
+    [SerializeField] public float fireInterval = 1f;
+
+    private GameObject player;
+    [SerializeField] private float fireTimer = 0f;
+
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
-    // Update is called once per frame
     void Update()
     {
-        transform.position = Vector3.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
+        if (player != null)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, player.transform.position, movementSpeed * Time.deltaTime);
+            Vector3 direction = (player.transform.position - transform.position).normalized;
+            transform.rotation = Quaternion.LookRotation(direction);
+
+            fireTimer += Time.deltaTime;
+            if (fireTimer >= fireInterval)
+            {
+                fireTimer = 0f;
+                AttackPlayer();
+            }
+        }
+    }
+
+    void AttackPlayer()
+    {
+        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, transform.rotation);
+        Rigidbody bulletRigidbody = bullet.GetComponent<Rigidbody>();
+        Vector3 directionToPlayer = (player.transform.position - firePoint.position).normalized;
+        bulletRigidbody.AddForce(directionToPlayer * bulletForce);
     }
 }

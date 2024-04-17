@@ -41,7 +41,7 @@ public class BotSpawnManager : MonoBehaviour
             newZPos = Random.Range(-zRange, zRange);
         }while((newZPos < zPosBoundary) && (newZPos > -zPosBoundary));
 
-        spawnPos = new UnityEngine.Vector3(newXPos, 10, newZPos);
+        spawnPos = new UnityEngine.Vector3(newXPos, 15, newZPos);
         Instantiate(botPrefab, spawnPos, botPrefab.transform.rotation);
     }
 }
