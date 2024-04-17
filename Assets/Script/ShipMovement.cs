@@ -54,7 +54,7 @@ public class PlayerMovement : MonoBehaviour
     }
     private void ShipShoot()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKey(KeyCode.Space))
         {
             Debug.Log("Shoot");
             Rigidbody bullet = Instantiate(bulletPrefab, spawnBullet.position, Quaternion.identity);
@@ -68,5 +68,6 @@ public class PlayerMovement : MonoBehaviour
             bullet.AddForce(spawnBullet.up * bulletSpeed, ForceMode.Impulse);
         }
     }
+
 
 }

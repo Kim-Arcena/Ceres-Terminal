@@ -14,20 +14,20 @@ public class Wrap : MonoBehaviour
 
         if (viewportPosition.x < -buffer)
         {
-            moveAdjustment.x += 1.3f;
+            moveAdjustment.x += 1.09f;
         }
         else if (viewportPosition.x > 1 + buffer)
         {
-            moveAdjustment.x -= 1.3f;
+            moveAdjustment.x -= 1.09f;
         }
 
         if (viewportPosition.y < -buffer)
         {
-            moveAdjustment.y += 1.3f;
+            moveAdjustment.y += 1.09f;
         }
         else if (viewportPosition.y > 1 + buffer)
         {
-            moveAdjustment.y -= 1.3f;
+            moveAdjustment.y -= 1.09f;
         }
 
         viewportPosition += moveAdjustment;

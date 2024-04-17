@@ -5,6 +5,7 @@ using UnityEngine;
 public class ShipBehavior : MonoBehaviour
 {
     // Start is called before the first frame update
+    [SerializeField] private ParticleSystem destroyFx;
     void Start()
     {
         
@@ -20,8 +21,10 @@ public class ShipBehavior : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Obstacle"))
         {
+            Instantiate(destroyFx, transform.position, Quaternion.identity);
             Destroy(collision.gameObject);
             Destroy(gameObject);
+            
         }
     }
 }

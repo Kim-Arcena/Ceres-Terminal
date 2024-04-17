@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1858943784538828727}
   m_Layer: 0
   m_Name: s_4
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -161,4 +161,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   size: 0
+  destroyFx: {fileID: 200860275181423301, guid: c4443b8f9aeb7234f906d72e1b1d6aa5, type: 3}
   gameManager: {fileID: 0}
