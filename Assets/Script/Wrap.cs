@@ -25,10 +25,8 @@ public class Wrap : MonoBehaviour
             moveAdjustment.y -= 1;
         }
 
-        // Reset the viewportPosition with the original value plus moveAdjustment
         viewportPosition += moveAdjustment;
 
-        // Update the transform position using the adjusted viewportPosition
         transform.position = Camera.main.ViewportToWorldPoint(viewportPosition);
     }
 }
