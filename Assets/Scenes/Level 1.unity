@@ -299,8 +299,8 @@ MonoBehaviour:
   - {fileID: 6783417226435512761, guid: abea9e67bf8a4102da35308907466d47, type: 3}
   - {fileID: 1354388785900346730, guid: b06e80c9bdc2f0fb3a5e4678247f6a2d, type: 3}
   - {fileID: 6647399875214346797, guid: 21d8a472f2a25b024b98a6da808965d9, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2420826334762766439, guid: 36d65a8793359d685bc0cf8e6d866882, type: 3}
+  - {fileID: 7403967108857052600, guid: 119d55180a44dde00b52a90097e8a3dc, type: 3}
   asteroidCount: 3
 --- !u!4 &945503544
 Transform:
