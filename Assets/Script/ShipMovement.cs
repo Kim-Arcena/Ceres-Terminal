@@ -17,7 +17,6 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody shipRb;
     private bool isAlive = true;
-    private bool isAccelerating = false;
     
 
     private void Start(){
@@ -54,7 +53,7 @@ public class PlayerMovement : MonoBehaviour
     }
     private void ShipShoot()
     {
-        if(Input.GetKey(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log("Shoot");
             Rigidbody bullet = Instantiate(bulletPrefab, spawnBullet.position, Quaternion.identity);

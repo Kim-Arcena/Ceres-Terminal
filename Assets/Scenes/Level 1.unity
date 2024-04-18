@@ -635,6 +635,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1827809877549434760, guid: 9df3d45a37ae01d4a96089d24842fd94, type: 3}
+      propertyPath: destroyFx
+      value: 
+      objectReference: {fileID: 200860275181423301, guid: c4443b8f9aeb7234f906d72e1b1d6aa5, type: 3}
     - target: {fileID: 3367749023841084398, guid: 9df3d45a37ae01d4a96089d24842fd94, type: 3}
       propertyPath: m_Name
       value: Ship
@@ -702,6 +706,10 @@ PrefabInstance:
     - target: {fileID: 8321382834590393589, guid: 9df3d45a37ae01d4a96089d24842fd94, type: 3}
       propertyPath: maxMoveSpeed
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 9156982129308271895, guid: 9df3d45a37ae01d4a96089d24842fd94, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

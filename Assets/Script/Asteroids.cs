@@ -7,6 +7,8 @@ public class Asteroids : MonoBehaviour
     [SerializeField] private float size;
     private string asteroidType;
     [SerializeField] private ParticleSystem destroyFx;
+    [SerializeField] private Asteroids[] mediumAsteroids;
+    [SerializeField] private Asteroids[] smallAsteroids;
     private int hits = 0;
     public GameManager gameManager;
 
@@ -36,31 +38,35 @@ public class Asteroids : MonoBehaviour
         if (collision.gameObject.CompareTag("Bullet"))
         {
             hits++;
+            Destroy(collision.gameObject);
             if (hits == 3 && asteroidType[0] == 'l')
             {
+                for (int i = 0; i < 2; i++){
+                    Instantiate(mediumAsteroids[Random.Range(0, 5)], transform.position, transform.rotation);
+                }
                 OnDestroy();
-                gameManager.asteroidCount--;
                 Destroy(gameObject);
-                Destroy(collision.gameObject);
             }
             if (hits == 2 && asteroidType[0] == 'm')
             {
+                for(int i = 0; i < 2; i++){
+                    Instantiate(smallAsteroids[Random.Range(0, 4)], transform.position, transform.rotation);
+                }
                 OnDestroy();
-                gameManager.asteroidCount--;
                 Destroy(gameObject);
-                Destroy(collision.gameObject);
             }
             if (hits == 1 && asteroidType[0] == 's')
             {
                 OnDestroy();
-                gameManager.asteroidCount--;
                 Destroy(gameObject);
-                Destroy(collision.gameObject);
             }
         }
     }
     void OnDestroy()
     {
+        if(gameManager != null){
+            gameManager.asteroidCount--;
+        }
         Instantiate(destroyFx, transform.position, transform.rotation); 
     }
 }
