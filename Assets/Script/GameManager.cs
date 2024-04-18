@@ -50,9 +50,13 @@ public class GameManager : MonoBehaviour
                 break;
         }
 
+<<<<<<< Updated upstream
         Asteroids asteroid = Instantiate(asteroidPrefabs[asteroidIndex], spawnPosition, Quaternion.Euler(90, 0, 0));
 
         
+=======
+        Asteroids asteroid = Instantiate(asteroidPrefabs[asteroidIndex], spawnPosition, Quaternion.Euler(90, 0, 0));        
+>>>>>>> Stashed changes
         asteroid.gameManager = this;
     }
 
