@@ -60,7 +60,7 @@ public class TutorialMovement : MonoBehaviour
             if (leftArrowPressTime >= 1f || rightArrowPressTime >= 1f)
             {
                 thrusterTutorial = true;
-                acceleration = 50f;
+                acceleration = 10f;
             }
         }
         
