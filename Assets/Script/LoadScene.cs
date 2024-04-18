@@ -6,9 +6,13 @@ using UnityEngine.SceneManagement;
 public class LoadScene : MonoBehaviour
 {
     [SerializeField] private string scenename;
-    void OnTriggerEnter(Collider other){
-        if(other.CompareTag("Player")){
+    
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
             SceneManager.LoadScene(scenename);
         }
     }
 }
+
