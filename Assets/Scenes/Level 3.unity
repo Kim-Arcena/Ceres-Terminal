@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &233929649 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3657204777666470880, guid: 9df3d45a37ae01d4a96089d24842fd94, type: 3}
+  m_PrefabInstance: {fileID: 1067069012}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &886503231
 GameObject:
   m_ObjectHideFlags: 0
@@ -217,7 +222,7 @@ MonoBehaviour:
   - {fileID: 4810909102507745952, guid: aa6cfd12f0a4729afb0cd49705afdcaf, type: 3}
   - {fileID: 6733888699080222445, guid: 51ce21d0a5d42b5eb9a65cb6b596d5e1, type: 3}
   - {fileID: 1858943784538828727, guid: f352bdc1df4f46ecf96391283c02e2a3, type: 3}
-  asteroidCount: 6
+  asteroidCount: 5
 --- !u!4 &889447799
 Transform:
   m_ObjectHideFlags: 0
@@ -268,7 +273,7 @@ MonoBehaviour:
   - {fileID: 2890689877681927051, guid: 19185330ac9a1c7d996f85390353c0f6, type: 3}
   - {fileID: 8465248550429191236, guid: dbf180aa393066a708518405efabf6ea, type: 3}
   - {fileID: 4110608927498424788, guid: 03658c74d94992ab1a014236dae9f4d5, type: 3}
-  asteroidCount: 6
+  asteroidCount: 4
 --- !u!4 &957818205
 Transform:
   m_ObjectHideFlags: 0
@@ -282,7 +287,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1067069013}
+  - {fileID: 233929649}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1067069012
@@ -342,11 +347,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9df3d45a37ae01d4a96089d24842fd94, type: 3}
---- !u!4 &1067069013 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1167689674337856148, guid: 9df3d45a37ae01d4a96089d24842fd94, type: 3}
-  m_PrefabInstance: {fileID: 1067069012}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1386024093
 GameObject:
   m_ObjectHideFlags: 0
@@ -383,7 +383,7 @@ MonoBehaviour:
   - {fileID: 6647399875214346797, guid: 21d8a472f2a25b024b98a6da808965d9, type: 3}
   - {fileID: 0}
   - {fileID: 0}
-  asteroidCount: 6
+  asteroidCount: 3
 --- !u!4 &1386024095
 Transform:
   m_ObjectHideFlags: 0
@@ -788,8 +788,8 @@ SceneRoots:
   - {fileID: 1668390186}
   - {fileID: 1400316310}
   - {fileID: 1641604648}
-  - {fileID: 957818205}
   - {fileID: 1386024095}
+  - {fileID: 957818205}
   - {fileID: 889447799}
   - {fileID: 1662682758}
   - {fileID: 886503232}
