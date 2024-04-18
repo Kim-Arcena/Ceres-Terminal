@@ -102,7 +102,7 @@ public class TutorialMovement : MonoBehaviour
             largeAsteroidManager.SetActive(true);
             shooterCanvas.SetActive(false);
             destroyCanvas.SetActive(true);
-            Invoke("Fadeout", 3.0f);
+            Invoke("Fadeout", 7.0f);
         }
     }
 
