@@ -1,10 +1,10 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private Asteroids[] asteroidPrefabs;
+    [SerializeField] private float asteroidSpawnDelay = 1f;
 
     public int asteroidCount = 3;
     private int level = 1;
@@ -12,20 +12,22 @@ public class GameManager : MonoBehaviour
     private int asteroidIndex;
     private bool asteroidsSpawned = false;
 
-    private void Update()
+    private void Start()
     {
-        if (!asteroidsSpawned)
-        {
-            for(int i = 0; i< asteroidCount; i++){
-                asteroidSize = Random.Range(0.8f,1.2f);
-                asteroidIndex = Random.Range(0,3);
-                SpawnAsteroid(asteroidSize, asteroidIndex);
-            }
-            asteroidsSpawned = true;
-        }
+        StartCoroutine(SpawnAsteroidsWithDelay());
     }
 
-
+    private IEnumerator SpawnAsteroidsWithDelay()
+    {
+        for (int i = 0; i < asteroidCount; i++)
+        {
+            asteroidSize = Random.Range(0.8f, 1.2f);
+            asteroidIndex = Random.Range(0, 3);
+            SpawnAsteroid(asteroidSize, asteroidIndex);
+            yield return new WaitForSeconds(asteroidSpawnDelay); // Wait for 0.5 seconds before spawning the next asteroid
+        }
+        asteroidsSpawned = true;
+    }
 
     private void SpawnAsteroid(float asteroidSize, int asteroidIndex)
     {
@@ -50,8 +52,6 @@ public class GameManager : MonoBehaviour
                 break;
         }
 
-        Asteroids asteroid = Instantiate(asteroidPrefabs[asteroidIndex], spawnPosition, Quaternion.Euler(90, 0, 0));
+        Instantiate(asteroidPrefabs[asteroidIndex], spawnPosition, Quaternion.Euler(90, 0, 0));
     }
-
-
 }
