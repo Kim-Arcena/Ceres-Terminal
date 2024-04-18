@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 
 public class BotSpawnManager : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class BotSpawnManager : MonoBehaviour
     [SerializeField] public float xRange = 15f;
     [SerializeField] public float zRange = 15f;
     [SerializeField] private int currentBotCount = 0;
+    [SerializeField] private int maxBotSpawn = 2;
     private List<GameObject> spawnedBots = new List<GameObject>();
 
     void Start()
@@ -27,7 +29,7 @@ public class BotSpawnManager : MonoBehaviour
 
     void SpawnBot()
     {
-        if (currentBotCount >= 2) // If already at max bot count, return without spawning
+        if (currentBotCount >= maxBotSpawn)
         {
             return;
         }
