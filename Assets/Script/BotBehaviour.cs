@@ -1,17 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class BotBehaviour : MonoBehaviour
 {
-    [SerializeField] public float movementSpeed = 5f;
+    [SerializeField] public float movementSpeed = 2.5f;
     public GameObject bulletPrefab;
     public Transform firePoint;
     [SerializeField] public float bulletForce = 500f;
-    [SerializeField] public float fireInterval = 1f;
+    [SerializeField] public float fireInterval = 3f;
 
     private GameObject player;
-    [SerializeField] private float fireTimer = 0f;
+    [SerializeField] private float fireTimer = 1.0f;
 
     void Start()
     {
@@ -41,5 +42,19 @@ public class BotBehaviour : MonoBehaviour
         Rigidbody bulletRigidbody = bullet.GetComponent<Rigidbody>();
         Vector3 directionToPlayer = (player.transform.position - firePoint.position).normalized;
         bulletRigidbody.AddForce(directionToPlayer * bulletForce);
+    }
+    private void OnTriggerEnter(Collider collision)
+    {
+        if(collision.gameObject.CompareTag("Bullet"))
+        {
+            Destroy(collision.gameObject);
+            Destroy(gameObject);
+
+            BotSpawnManager spawnManager = FindObjectOfType<BotSpawnManager>();
+            if (spawnManager != null)
+            {
+                spawnManager.DecrementBotCount(gameObject);
+            }
+        }
     }
 }

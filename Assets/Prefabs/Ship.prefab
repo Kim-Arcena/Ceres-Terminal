@@ -32,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 10, z: -6.8}
-  m_LocalScale: {x: 6, y: 6, z: 6}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 845007861570137618}
@@ -102,9 +102,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9552da47fd5b9e73ea8f348d94235df5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxMoveSpeed: 400
+  maxMoveSpeed: 10
   rotateSpeed: 200
-  acceleration: 50
+  acceleration: 10
   spawnBullet: {fileID: 845007861570137618}
   bulletPrefab: {fileID: 8449798723006539125, guid: 2c98ed724d2ed5a44b60e5f8a13cd96c, type: 3}
   bulletSpeed: 20
@@ -205,7 +205,7 @@ Transform:
   m_GameObject: {fileID: 6514171303392152281}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.3, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
