@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 6699092618566436961}
   m_Layer: 0
   m_Name: s_1
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 10, z: 5.51}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -161,4 +161,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   size: 0
+  mediumAsteroids:
+  - {fileID: 3412916494451247133, guid: 7c4d498aefe816f468cbb6fe6e851650, type: 3}
+  - {fileID: 3343732045268376516, guid: 561a6a925fae65094874637a778960a5, type: 3}
+  - {fileID: 2890689877681927051, guid: 19185330ac9a1c7d996f85390353c0f6, type: 3}
+  - {fileID: 8465248550429191236, guid: dbf180aa393066a708518405efabf6ea, type: 3}
+  - {fileID: 4110608927498424788, guid: 03658c74d94992ab1a014236dae9f4d5, type: 3}
+  smallAsteroids:
+  - {fileID: 6699092618566436961}
+  - {fileID: 4810909102507745952, guid: aa6cfd12f0a4729afb0cd49705afdcaf, type: 3}
+  - {fileID: 6733888699080222445, guid: 51ce21d0a5d42b5eb9a65cb6b596d5e1, type: 3}
+  - {fileID: 1858943784538828727, guid: f352bdc1df4f46ecf96391283c02e2a3, type: 3}
   gameManager: {fileID: 0}
