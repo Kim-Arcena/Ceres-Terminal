@@ -52,7 +52,6 @@ public class GameManager : MonoBehaviour
 
         Asteroids asteroid = Instantiate(asteroidPrefabs[asteroidIndex], spawnPosition, Quaternion.Euler(90, 0, 0));
 
-        asteroid.transform.localScale = Vector3.one * -asteroidSize;
         
         asteroid.gameManager = this;
     }
