@@ -13,6 +13,7 @@ public class TutorialMovement : MonoBehaviour
     [SerializeField] GameObject shooterCanvas;
     [SerializeField] GameObject destroyCanvas;
     [SerializeField] GameObject largeAsteroidManager;
+    [SerializeField] GameObject FadeOutManager;
 
     [Header("Ship Components")]
     [SerializeField] private Transform spawnBullet;
@@ -101,7 +102,12 @@ public class TutorialMovement : MonoBehaviour
             largeAsteroidManager.SetActive(true);
             shooterCanvas.SetActive(false);
             destroyCanvas.SetActive(true);
+            Invoke("Fadeout", 3.0f);
         }
+    }
+
+    private void Fadeout(){
+        FadeOutManager.SetActive(true);
     }
 
     private void ShipRotation()
