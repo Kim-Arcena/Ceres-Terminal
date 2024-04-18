@@ -16,9 +16,7 @@ public class PlayerMovement : MonoBehaviour
 
 
     private Rigidbody shipRb;
-    private bool isAlive = true;
-    private bool isAccelerating = false;
-    
+    private bool isAlive = true;    
 
     private void Start(){
         shipRb = GetComponent<Rigidbody>();
