@@ -11,6 +11,8 @@ public class TutorialMovement : MonoBehaviour
     [SerializeField] GameObject rotateCanvas;
     [SerializeField] GameObject arrowUPCanvas;
     [SerializeField] GameObject shooterCanvas;
+    [SerializeField] GameObject destroyCanvas;
+    [SerializeField] GameObject largeAsteroidManager;
 
     [Header("Ship Components")]
     [SerializeField] private Transform spawnBullet;
@@ -32,7 +34,7 @@ public class TutorialMovement : MonoBehaviour
     private bool leftArrowPressed = false;
     private bool rightArrowPressed = false;
     private bool topArrowPressed = false;
-    private bool spacebarPressed = false;
+    private bool spaceBarPressed = false;
     private float leftArrowPressTime = 0f;
     private float rightArrowPressTime = 0f;
     private float topArrowPressTime = 0f;
@@ -60,8 +62,6 @@ public class TutorialMovement : MonoBehaviour
                 thrusterTutorial = true;
                 acceleration = 50f;
             }
-            arrowUPCanvas.SetActive(false);
-            shooterCanvas.SetActive(false);
         }
         
         if(thrusterTutorial){
@@ -82,11 +82,26 @@ public class TutorialMovement : MonoBehaviour
             ShipRotation();
             ShipAccelaration();
             ShipShoot();
+
+            if(spaceBarPressed){
+                spaceBarPressedCounter += 1;
+            }
+
+            if(spaceBarPressedCounter >= 5){
+                destroyTutorial = true;
+            }
+
+            Debug.Log("shooterTutorial" + destroyTutorial.ToString());
+
             arrowUPCanvas.SetActive(false);
             shooterCanvas.SetActive(true);
         }
 
-
+        if(destroyTutorial){
+            largeAsteroidManager.SetActive(true);
+            shooterCanvas.SetActive(false);
+            destroyCanvas.SetActive(true);
+        }
     }
 
     private void ShipRotation()
@@ -129,7 +144,6 @@ public class TutorialMovement : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            Debug.Log("Shoot");
             Rigidbody bullet = Instantiate(bulletPrefab, spawnBullet.position, Quaternion.identity);
             Vector3 shipVelocity = shipRb.velocity;
             Vector3 shipDirection = transform.rotation * Vector3.up;
@@ -139,10 +153,10 @@ public class TutorialMovement : MonoBehaviour
             }
             bullet.velocity = shipSpeed * shipDirection;
             bullet.AddForce(spawnBullet.up * bulletSpeed, ForceMode.Impulse);
-            spacebarPressed = true;
+            spaceBarPressed = true;
         }
         else{
-            spacebarPressed = false;
+            spaceBarPressed = false;
         }
     }
 }
