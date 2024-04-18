@@ -1,23 +1,34 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class KeplerMovement : MonoBehaviour
+public class ParabolicMovement : MonoBehaviour
 {
-    [SerializeField] private float moveSpeed = 15f;
-    [SerializeField] private float xOutSight = -66f;
+    private Vector3 startPoint = new Vector3(-50f, 0f, -12f);
+    private Vector3 endPoint = new Vector3(50f, 0f, -12f);
+    public float height = 5f;
+    public float speed = 1f;
 
-    // Start is called before the first frame update
+    private float journeyLength;
+    private float startTime;
+
     void Start()
     {
-        
+        journeyLength = Vector3.Distance(startPoint, endPoint);
+        startTime = Time.time;
     }
 
     void Update()
     {
-        transform.Translate(Vector3.right * moveSpeed * Time.deltaTime);
-        if(transform.position.x <= xOutSight){
-            Destroy(gameObject);
+        float distCovered = (Time.time - startTime) * speed;
+
+        float fracJourney = distCovered / journeyLength;
+
+        float zOffset = -height * Mathf.Sin(Mathf.PI * fracJourney);
+
+        transform.position = Vector3.Lerp(startPoint, endPoint, fracJourney) + Vector3.forward * zOffset;
+
+        if (fracJourney >= 1.0f)
+        {
+            startTime = Time.time;
         }
     }
 }
