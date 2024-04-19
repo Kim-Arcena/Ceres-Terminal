@@ -65,8 +65,7 @@ public class TutorialMovement : MonoBehaviour
         if (rotateTutorial)
         {
             ShipRotation();
-            ShipAccelaration();
-
+            // ShipAccelaration();
             if (leftArrowPressed)
                 leftArrowPressTime += Time.deltaTime;
 
@@ -77,6 +76,8 @@ public class TutorialMovement : MonoBehaviour
             {
                 thrusterTutorial = true;
                 acceleration = 10f;
+            }else{
+                shipBehavior.PlayAccelarationSound();
             }
         }
         
