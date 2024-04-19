@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class ShipBehavior : MonoBehaviour
 {
-    // Start is called before the first frame update
+    private PlayerMovement playerManager;
+
     void Start()
     {
-        
+        playerManager = FindObjectOfType<PlayerMovement>();
     }
 
     // Update is called once per frame
@@ -20,6 +21,7 @@ public class ShipBehavior : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Obstacle"))
         {
+            playerManager.isAlive = false;
             Destroy(collision.gameObject);
             Destroy(gameObject);
         }

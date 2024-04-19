@@ -5,36 +5,60 @@ using UnityEngine;
 
 public class Timer : MonoBehaviour
 {
-    public Text timerText;
-    public float startTime = 60f; // Initial time in seconds
+    [SerializeField] public Text timerText;
+    [SerializeField] public float startTime = 60f;
 
-    private float currentTime;
+    [SerializeField] private float currentTime;
+    private PlayerMovement playerManager;
+    public GameObject nextLevelTrigger;
+    [SerializeField] public bool setTrigger = false;
 
     void Start()
     {
         currentTime = startTime;
+        playerManager = FindObjectOfType<PlayerMovement>();
     }
 
     void Update()
     {
-        // Update timer
-        currentTime -= Time.deltaTime;
-
-        // Display timer in minutes and seconds format
-        string minutes = ((int)currentTime / 60).ToString("00");
-        string seconds = (currentTime % 60).ToString("00");
-
-        // Update the text UI element
-        timerText.text = minutes + ":" + seconds;
-
-        // If timer reaches zero, do something (e.g., end game)
-        if (currentTime <= 0)
+        if (playerManager.isAlive && setTrigger == false)
         {
-            // Timer has reached zero, handle this condition
-            // For example:
-            // EndGame();
+            currentTime -= Time.deltaTime;
+
+            string minutes = ((int)currentTime / 60).ToString("00");
+            string seconds = (currentTime % 60).ToString("00");
+
+            timerText.text = minutes + ":" + seconds;
+
+            if (currentTime <= 0)
+            {
+                if(setTrigger == false)
+                {
+                    SetNextLevelTrigger();
+                }
+            }
+        }
+        else
+        {
+            currentTime = startTime;
         }
     }
 
-    // Other methods can be added for pausing, resetting, etc., depending on your needs
+    void SetNextLevelTrigger()
+    {
+        BoxCollider collider = nextLevelTrigger.GetComponent<BoxCollider>();
+        if (collider != null)
+        {
+            collider.enabled = true;
+        }
+        else
+        {
+            collider = nextLevelTrigger.AddComponent<BoxCollider>();
+            collider.isTrigger = true;
+            collider.enabled = true;
+            collider.size = new Vector3(75.0f, 120.0f, 1f);
+        }
+
+        setTrigger = true;
+    }
 }
