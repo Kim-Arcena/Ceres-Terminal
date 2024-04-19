@@ -8,12 +8,17 @@ public class TutorialMovement : MonoBehaviour
     [SerializeField] private float maxMoveSpeed = 10f;
     [SerializeField] private float rotateSpeed = 180f;
     [SerializeField] private float acceleration = 10f;
+    
     [SerializeField] GameObject rotateCanvas;
     [SerializeField] GameObject arrowUPCanvas;
     [SerializeField] GameObject shooterCanvas;
     [SerializeField] GameObject destroyCanvas;
     [SerializeField] GameObject largeAsteroidManager;
     [SerializeField] GameObject FadeOutManager;
+    [SerializeField] GameObject FadeInManager;
+    [SerializeField] GameObject TimePassed;
+    [SerializeField] GameObject WaitCanvas;
+    [SerializeField] GameObject HugeAsteroid;
 
     [Header("Ship Components")]
     [SerializeField] private Transform spawnBullet;
@@ -91,9 +96,6 @@ public class TutorialMovement : MonoBehaviour
             if(spaceBarPressedCounter >= 5){
                 destroyTutorial = true;
             }
-
-            Debug.Log("shooterTutorial" + destroyTutorial.ToString());
-
             arrowUPCanvas.SetActive(false);
             shooterCanvas.SetActive(true);
         }
@@ -103,11 +105,31 @@ public class TutorialMovement : MonoBehaviour
             shooterCanvas.SetActive(false);
             destroyCanvas.SetActive(true);
             Invoke("Fadeout", 7.0f);
+            destroyCanvas.SetActive(false);
         }
     }
 
     private void Fadeout(){
         FadeOutManager.SetActive(true);
+        Invoke("FadeIn", 4.50f);
+    }
+
+    private void FadeIn(){
+        largeAsteroidManager.SetActive(false);
+        destroyCanvas.SetActive(false);
+        TimePassed.SetActive(true);
+        Invoke("showWait", 7.5f);
+    }
+
+    private void showWait(){
+        WaitCanvas.SetActive(true);
+        Invoke("SpawnAsteroid", 2f);
+    }
+    
+    
+    private void SpawnAsteroid(){
+        HugeAsteroid.SetActive(true);
+
     }
 
     private void ShipRotation()

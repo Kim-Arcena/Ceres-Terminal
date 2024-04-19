@@ -23,5 +23,10 @@ public class ShipBehavior : MonoBehaviour
             Destroy(collision.gameObject);
             Destroy(gameObject);
         }
+        
+        if(collision.gameObject.CompareTag("HugeAsteroid"))
+        {
+            Debug.Log("Big asteroid hit");
+        }
     }
 }

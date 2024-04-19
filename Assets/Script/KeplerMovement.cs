@@ -5,7 +5,7 @@ using UnityEngine;
 public class KeplerMovement : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 15f;
-    [SerializeField] private float xOutSight = -66f;
+    [SerializeField] private float xOutSight = -13f;
 
     // Start is called before the first frame update
     void Start()
@@ -15,8 +15,10 @@ public class KeplerMovement : MonoBehaviour
 
     void Update()
     {
-        transform.Translate(Vector3.right * moveSpeed * Time.deltaTime);
-        if(transform.position.x <= xOutSight){
+        transform.Translate(Vector3.left * moveSpeed * Time.deltaTime);
+        
+        if(transform.position.x <= xOutSight)
+        {
             Destroy(gameObject);
         }
     }
