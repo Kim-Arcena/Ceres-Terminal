@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.4964127, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -123,6 +123,67 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &21394485
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 216225910508210170, guid: 4a6fd0b456ec1624f933e824c44d0fce, type: 3}
+      propertyPath: m_Name
+      value: EndLevelTriggerBox
+      objectReference: {fileID: 0}
+    - target: {fileID: 3182385117528314044, guid: 4a6fd0b456ec1624f933e824c44d0fce, type: 3}
+      propertyPath: scenename
+      value: Level 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6484207642128535056, guid: 4a6fd0b456ec1624f933e824c44d0fce, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6484207642128535056, guid: 4a6fd0b456ec1624f933e824c44d0fce, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 51.34726
+      objectReference: {fileID: 0}
+    - target: {fileID: 6484207642128535056, guid: 4a6fd0b456ec1624f933e824c44d0fce, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6484207642128535056, guid: 4a6fd0b456ec1624f933e824c44d0fce, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6484207642128535056, guid: 4a6fd0b456ec1624f933e824c44d0fce, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6484207642128535056, guid: 4a6fd0b456ec1624f933e824c44d0fce, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6484207642128535056, guid: 4a6fd0b456ec1624f933e824c44d0fce, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6484207642128535056, guid: 4a6fd0b456ec1624f933e824c44d0fce, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6484207642128535056, guid: 4a6fd0b456ec1624f933e824c44d0fce, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6484207642128535056, guid: 4a6fd0b456ec1624f933e824c44d0fce, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4a6fd0b456ec1624f933e824c44d0fce, type: 3}
 --- !u!1001 &294206611
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -565,6 +626,7 @@ MonoBehaviour:
   - {fileID: 1004063110340439640, guid: 95bd1bb5fcdad3b5aa9835b814b885e6, type: 3}
   - {fileID: 1621781231491008646, guid: 666514a53b6ebdcbebadce3c305eb014, type: 3}
   - {fileID: 8993702979141495556, guid: d222b11ce94a415cfb92982620739a23, type: 3}
+  asteroidSpawnDelay: 1
   asteroidCount: 2
 --- !u!4 &460328532
 Transform:
@@ -2491,6 +2553,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4340539383612703542, guid: ef9bab49b1e42aa4eba41b12071319e4, type: 3}
   m_PrefabInstance: {fileID: 1692582978}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1709743218 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 216225910508210170, guid: 4a6fd0b456ec1624f933e824c44d0fce, type: 3}
+  m_PrefabInstance: {fileID: 21394485}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1922501160 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3367749023841084398, guid: 9df3d45a37ae01d4a96089d24842fd94, type: 3}
@@ -2524,6 +2591,7 @@ MonoBehaviour:
   spawnBullet: {fileID: 2124856482}
   bulletPrefab: {fileID: 8449798723006539125, guid: 2c98ed724d2ed5a44b60e5f8a13cd96c, type: 3}
   bulletSpeed: 20
+  nextLevelTrigger: {fileID: 1709743218}
 --- !u!1 &1955276993
 GameObject:
   m_ObjectHideFlags: 0
@@ -2788,3 +2856,4 @@ SceneRoots:
   - {fileID: 402571151}
   - {fileID: 1050964059}
   - {fileID: 294206611}
+  - {fileID: 21394485}

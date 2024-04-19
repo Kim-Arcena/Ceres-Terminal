@@ -45,6 +45,7 @@ public class TutorialMovement : MonoBehaviour
     private float rightArrowPressTime = 0f;
     private float topArrowPressTime = 0f;
     private int spaceBarPressedCounter = 0;
+    public GameObject nextLevelTrigger;
 
     private void Start()
     {
@@ -124,23 +125,40 @@ public class TutorialMovement : MonoBehaviour
 
     private void showWait(){
         WaitCanvas.SetActive(true);
+        Invoke("NextScene", 10f);
         // Invoke("SpawnHugeAsteroid", 0f);
     }
-    
-    private void SpawnHugeAsteroid()
-    {
-        HugeAsteroid.SetActive(true);
 
-        SphereCollider sphereCollider = GetComponent<SphereCollider>();
-        if (sphereCollider != null)
+    private void NextScene()
+    {
+        BoxCollider collider = nextLevelTrigger.GetComponent<BoxCollider>();
+        if (collider != null)
         {
-            sphereCollider.isTrigger = false;
+            collider.enabled = true;
         }
         else
         {
-            Debug.LogWarning("SphereCollider component not found on HugeAsteroid GameObject!");
+            collider = nextLevelTrigger.AddComponent<BoxCollider>();
+            collider.isTrigger = true;
+            collider.enabled = true;
+            collider.size = new Vector3(75.0f, 120.0f, 1f);
         }
     }
+    
+    // private void SpawnHugeAsteroid()
+    // {
+    //     HugeAsteroid.SetActive(true);
+
+    //     SphereCollider sphereCollider = GetComponent<SphereCollider>();
+    //     if (sphereCollider != null)
+    //     {
+    //         sphereCollider.isTrigger = false;
+    //     }
+    //     else
+    //     {
+    //         Debug.LogWarning("SphereCollider component not found on HugeAsteroid GameObject!");
+    //     }
+    // }
 
 
     private void ShipRotation()
