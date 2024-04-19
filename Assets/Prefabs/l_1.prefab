@@ -172,4 +172,5 @@ MonoBehaviour:
   - {fileID: 4810909102507745952, guid: aa6cfd12f0a4729afb0cd49705afdcaf, type: 3}
   - {fileID: 6733888699080222445, guid: 51ce21d0a5d42b5eb9a65cb6b596d5e1, type: 3}
   - {fileID: 1858943784538828727, guid: f352bdc1df4f46ecf96391283c02e2a3, type: 3}
+  explosion: {fileID: 7423839949581511795, guid: 8f3e90fb3ecf85d448865fe153b6401f, type: 3}
   gameManager: {fileID: 0}

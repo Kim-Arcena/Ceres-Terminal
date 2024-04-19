@@ -64,7 +64,6 @@ public class BlackholeManager : MonoBehaviour
             currentBlackholeCount++;
         }
     }
-
     bool IsPositionValid(Vector3 position)
     {
         // Iterate through all existing black holes
@@ -72,14 +71,12 @@ public class BlackholeManager : MonoBehaviour
         {
             // Calculate the distance between the new position and existing black holes
             float distance = Vector3.Distance(position, blackHole.transform.position);
-
             // If the distance is less than 2 units, return false (not a valid position)
             if (distance < 2f)
             {
                 return false;
             }
         }
-
         // If no black holes are too close, return true (valid position)
         return true;
     }
@@ -87,13 +84,14 @@ public class BlackholeManager : MonoBehaviour
 
     IEnumerator ScaleUpAsteroid(Transform asteroidTransform, BoxCollider collider)
     {
+        collider.isTrigger = true;
         float timer = 0f;
 
         // Initial scale of the asteroid
         Vector3 initialScale = Vector3.one * 0.1f;
 
         // Final scale of the asteroid
-        Vector3 targetScale = Vector3.one *0.5f;
+        Vector3 targetScale = Vector3.one *Random.Range(0.5f, 1.0f);
 
         // Slowly scale up the asteroid over 2 seconds
         while (timer < 2f)
@@ -110,17 +108,24 @@ public class BlackholeManager : MonoBehaviour
 
         // Ensure the asteroid has reached its final scale
         asteroidTransform.localScale = targetScale;
-
-        // Turn on IsTrigger on the box collider
-        collider.isTrigger = true;
-
-        // Wait until the asteroid is destroyed or the scale changes
-        while (asteroidTransform && asteroidTransform.localScale != Vector3.one)
+        collider.isTrigger = false;
+        yield return new WaitForSeconds(10f);
+        // Scale down the asteroid over 2 seconds
+        timer = 0f;
+        while (timer < 2f)
         {
+            timer += Time.deltaTime;
+
+            float t = timer / 2f;
+
+            // Interpolate scale from target scale to initial scale
+            asteroidTransform.localScale = Vector3.Lerp(targetScale, initialScale, t);
+
             yield return null;
         }
 
-        // Turn off IsTrigger when scale becomes 1
-        collider.isTrigger = false;
+        // Ensure the asteroid has reached its initial scale
+        asteroidTransform.localScale = initialScale;
+        Destroy(asteroidTransform.gameObject);
     }
 }

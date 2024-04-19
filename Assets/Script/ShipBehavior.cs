@@ -5,6 +5,7 @@ using UnityEngine;
 public class ShipBehavior : MonoBehaviour
 {
     private PlayerMovement playerManager;
+    [SerializeField] private GameObject explosion;
 
     void Start()
     {
@@ -21,6 +22,7 @@ public class ShipBehavior : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Obstacle"))
         {
+            Instantiate(explosion, transform.position, transform.rotation);
             playerManager.isAlive = false;
             Destroy(collision.gameObject);
             Destroy(gameObject);
