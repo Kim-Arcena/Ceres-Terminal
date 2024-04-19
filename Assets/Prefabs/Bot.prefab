@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4450714172510239346}
   - component: {fileID: 7756990249293054564}
   - component: {fileID: 2655998760240793911}
+  - component: {fileID: 2662792551045467239}
   m_Layer: 0
   m_Name: Bot
   m_TagString: Obstacle
@@ -28,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 6.466851, y: 16.4, z: -1.1766224}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 4359224425917496490}
@@ -73,12 +74,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2927ac56f78958a4bada4200cc484c3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 5
+  movementSpeed: 1.5
   bulletPrefab: {fileID: 5277918865082242524, guid: c48365f10d50f2e4189754a599506651, type: 3}
   firePoint: {fileID: 4450714172510239346}
   bulletForce: 500
   fireInterval: 1
   fireTimer: 0
+--- !u!65 &2662792551045467239
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040163870466997249}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.38, y: 0.78, z: 2.03}
+  m_Center: {x: 0, y: 0, z: -0.32}
 --- !u!1 &4458020728568629463
 GameObject:
   m_ObjectHideFlags: 0
@@ -105,8 +127,8 @@ Transform:
   m_GameObject: {fileID: 4458020728568629463}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.2, y: -8.5580635, z: 1.1766224}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 4450714172510239346}
