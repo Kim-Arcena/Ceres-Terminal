@@ -7,6 +7,7 @@ public class LevelTwoIntroductionManager : MonoBehaviour
     [SerializeField] public GameObject shipPlayer;
     [SerializeField] public GameObject FirstDialogue;
     [SerializeField] public GameObject SecondDialogue;
+    [SerializeField] public GameObject keplerPlanet;
     [SerializeField] public bool moveShip = true;
     [SerializeField] public bool firstEvent = false;
     [SerializeField] public bool secondEvent = false;
@@ -48,11 +49,14 @@ public class LevelTwoIntroductionManager : MonoBehaviour
             // Calculate the rotation to look towards the second position
             Quaternion targetRotation = Quaternion.LookRotation(secondPosition - shipPlayer.transform.position);
 
-            // Preserve ship's current x-axis rotation
-            targetRotation.eulerAngles = new Vector3(shipPlayer.transform.rotation.eulerAngles.x, targetRotation.eulerAngles.y, targetRotation.eulerAngles.z);
+            // Get the Euler angles of the target rotation
+            Vector3 targetEulerAngles = targetRotation.eulerAngles;
+
+            // Reset x rotation to initial value
+            targetEulerAngles.x = shipPlayer.transform.rotation.eulerAngles.x;
 
             // Apply the rotation to the ship player
-            shipPlayer.transform.rotation = Quaternion.Slerp(shipPlayer.transform.rotation, targetRotation, Time.deltaTime * 3f);
+            shipPlayer.transform.rotation = Quaternion.Euler(targetEulerAngles);
 
             // Reassign initial y position
             Vector3 newPosition = shipPlayer.transform.position;
@@ -64,6 +68,7 @@ public class LevelTwoIntroductionManager : MonoBehaviour
                 shipPlayer.transform.position = secondPosition;
             }
         }
+
     }
 
     void StartSecondEvent()
