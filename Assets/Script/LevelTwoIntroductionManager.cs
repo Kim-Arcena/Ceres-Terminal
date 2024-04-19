@@ -8,6 +8,7 @@ public class LevelTwoIntroductionManager : MonoBehaviour
     [SerializeField] public GameObject FirstDialogue;
     [SerializeField] public GameObject SecondDialogue;
     [SerializeField] public GameObject keplerPlanet;
+    [SerializeField] public GameObject fadeIn;
     [SerializeField] public bool moveShip = true;
     [SerializeField] public bool firstEvent = false;
     [SerializeField] public bool secondEvent = false;
@@ -17,6 +18,7 @@ public class LevelTwoIntroductionManager : MonoBehaviour
 
     void Start()
     {
+        fadeIn.SetActive(true);
     }
 
     void Update()
