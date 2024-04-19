@@ -8,6 +8,8 @@ public class Asteroids : MonoBehaviour
     [SerializeField] private Asteroids[] mediumAsteroids;
     [SerializeField] private Asteroids[] smallAsteroids;
     [SerializeField] private ParticleSystem explosion;
+    [SerializeField] private AudioClip destroySound;
+    [SerializeField] private AudioClip hitSound;
     
     // [SerializeField] private ParticleSystem explosion;
 
@@ -38,6 +40,7 @@ public class Asteroids : MonoBehaviour
         if(other.gameObject.tag == "Bullet")
         {
             hits++;
+            AudioSource.PlayClipAtPoint(hitSound, transform.position);
             Destroy(other.gameObject); //destroys the bullet
             if(hits == 3 && asteroidName[0] == 'l'){
                 OnDestroy();
@@ -64,5 +67,6 @@ public class Asteroids : MonoBehaviour
             gameManager.asteroidCount--;
         }
         Instantiate(explosion, transform.position, transform.rotation);
+        AudioSource.PlayClipAtPoint(destroySound, transform.position);
     }
 }

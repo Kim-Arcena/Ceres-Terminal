@@ -113,6 +113,7 @@ MonoBehaviour:
   - {fileID: 2053557910559558977, guid: 1f4e48a9f57beed559952aa1db605b9d, type: 3}
   - {fileID: 8005820436967139015, guid: 18c7a7f40560e3035aa350e29f4680a8, type: 3}
   explosion: {fileID: 7423839949581511795, guid: 8f3e90fb3ecf85d448865fe153b6401f, type: 3}
+  destroySound: {fileID: 8300000, guid: 0403f76fc412b054dbc02336703e95a6, type: 3}
   gameManager: {fileID: 0}
 --- !u!114 &7220089729111332084
 MonoBehaviour:

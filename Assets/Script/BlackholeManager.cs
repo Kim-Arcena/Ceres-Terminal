@@ -21,10 +21,14 @@ public class BlackholeManager : MonoBehaviour
     [SerializeField] private float newXPos;
     [SerializeField] private float newZPos;
     [SerializeField] private int blackholeCount = 5;
+    [SerializeField] private AudioClip blackholeSound;
+    private BlackHoleSfx blackHoleSfx;
+
 
     void Start()
     {
         InvokeRepeating("SpawnBlackhole", startDelay, Random.Range(minRepeatRate, maxRepeatRate));
+        blackHoleSfx = GetComponent<BlackHoleSfx>();
     }
 
     // Update is called once per frame
@@ -37,6 +41,8 @@ public class BlackholeManager : MonoBehaviour
     {
         if (currentBlackholeCount < blackholeCount)
         {
+            // AudioSource.PlayClipAtPoint(blackholeSound, transform.position);
+            // blackHoleSfx.PlayBlackHoleSound();
             bool isValidSpawnPosition = false;
             Vector3 newSpawnPos = Vector3.zero;
 
@@ -72,7 +78,7 @@ public class BlackholeManager : MonoBehaviour
             // Calculate the distance between the new position and existing black holes
             float distance = Vector3.Distance(position, blackHole.transform.position);
             // If the distance is less than 2 units, return false (not a valid position)
-            if (distance < 2f)
+            if (distance < 5f)
             {
                 return false;
             }
@@ -126,6 +132,7 @@ public class BlackholeManager : MonoBehaviour
 
         // Ensure the asteroid has reached its initial scale
         asteroidTransform.localScale = initialScale;
+        // blackHoleSfx.StopBlackHoleSound();
         Destroy(asteroidTransform.gameObject);
     }
 }
