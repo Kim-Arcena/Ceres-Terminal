@@ -46,12 +46,15 @@ public class TutorialMovement : MonoBehaviour
     private float rightArrowPressTime = 0f;
     private float topArrowPressTime = 0f;
     private int spaceBarPressedCounter = 0;
+    private GameObject tail;
     public GameObject nextLevelTrigger;
 
     private void Start()
     {
         SphereCollider sphereCollider = GetComponent<SphereCollider>();
         shipRb = GetComponent<Rigidbody>();
+        tail = this.gameObject.transform.GetChild(1).gameObject;
+        tail.SetActive(false);
     }
 
     private void Update()
@@ -193,9 +196,11 @@ public class TutorialMovement : MonoBehaviour
             shipRb.AddForce(transform.up * acceleration);
             shipRb.velocity = Vector3.ClampMagnitude(shipRb.velocity, maxMoveSpeed);
             topArrowPressed = true;
+            tail.SetActive(true);
         }
         else{
             topArrowPressed = false;
+            tail.SetActive(false);
         }
     }
 

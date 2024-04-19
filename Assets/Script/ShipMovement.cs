@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform spawnBullet;
     [SerializeField] private Rigidbody bulletPrefab;
     [SerializeField] private float bulletSpeed = 20f;
+    private GameObject tail;
 
 
     private Rigidbody shipRb;
@@ -21,6 +22,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start(){
         shipRb = GetComponent<Rigidbody>();
+        tail = this.gameObject.transform.GetChild(1).gameObject;
+        tail.SetActive(false);
 
     }
     private void Update()
@@ -38,6 +41,9 @@ public class PlayerMovement : MonoBehaviour
         {
             shipRb.AddForce(transform.up * acceleration);
             shipRb.velocity = Vector3.ClampMagnitude(shipRb.velocity, maxMoveSpeed);
+            tail.SetActive(true);
+        }else{
+            tail.SetActive(false);
         }
     }
     private void ShipRotation()
