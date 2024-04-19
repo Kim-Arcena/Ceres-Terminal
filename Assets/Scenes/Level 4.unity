@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.4964127, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -129,7 +129,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1531844750}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4340539383612703542, guid: ef9bab49b1e42aa4eba41b12071319e4, type: 3}
       propertyPath: m_Pivot.x
@@ -320,11 +320,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef9bab49b1e42aa4eba41b12071319e4, type: 3}
---- !u!224 &326267643 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 4340539383612703542, guid: ef9bab49b1e42aa4eba41b12071319e4, type: 3}
-  m_PrefabInstance: {fileID: 125633342}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &548370493
 GameObject:
   m_ObjectHideFlags: 0
@@ -387,6 +382,7 @@ GameObject:
   m_Component:
   - component: {fileID: 788141250}
   - component: {fileID: 788141249}
+  - component: {fileID: 788141251}
   m_Layer: 0
   m_Name: milkeywaygalaxy
   m_TagString: Untagged
@@ -456,11 +452,26 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 10, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &788141251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 788141248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96e1fc2d3adb8b149a135fc64dce9f1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetScale: 17
+  startScale: 0.1
+  duration: 65
 --- !u!1 &816841011
 GameObject:
   m_ObjectHideFlags: 0
@@ -1071,3 +1082,6 @@ SceneRoots:
   - {fileID: 548370495}
   - {fileID: 1093365409}
   - {fileID: 851155264}
+  - {fileID: 125633342}
+  - {fileID: 788141250}
+  - {fileID: 1080891431}
