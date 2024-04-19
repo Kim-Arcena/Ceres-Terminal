@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Timer : MonoBehaviour
 {
-    [SerializeField] public Text timerText;
+    // [SerializeField] public Text timerText;
     [SerializeField] public float startTime = 60f;
 
     [SerializeField] private float currentTime;
@@ -25,10 +25,10 @@ public class Timer : MonoBehaviour
         {
             currentTime -= Time.deltaTime;
 
-            string minutes = ((int)currentTime / 60).ToString("00");
-            string seconds = (currentTime % 60).ToString("00");
+            // string minutes = ((int)currentTime / 60).ToString("00");
+            // string seconds = (currentTime % 60).ToString("00");
 
-            timerText.text = minutes + ":" + seconds;
+            // timerText.text = minutes + ":" + seconds;
 
             if (currentTime <= 0)
             {
