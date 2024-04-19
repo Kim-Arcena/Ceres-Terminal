@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Wrap : MonoBehaviour
 {
-    private float buffer = 0.1f;
+    [SerializeField] private float buffer = 0.1f;
 
     private void Update()
     {
