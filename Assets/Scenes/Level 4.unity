@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.4964127, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -158,6 +158,7 @@ MonoBehaviour:
   - {fileID: 2890689877681927051, guid: 19185330ac9a1c7d996f85390353c0f6, type: 3}
   - {fileID: 8465248550429191236, guid: dbf180aa393066a708518405efabf6ea, type: 3}
   - {fileID: 4110608927498424788, guid: 03658c74d94992ab1a014236dae9f4d5, type: 3}
+  asteroidSpawnDelay: 1
   asteroidCount: 8
 --- !u!4 &548370495
 Transform:
@@ -394,6 +395,7 @@ MonoBehaviour:
   - {fileID: 4810909102507745952, guid: aa6cfd12f0a4729afb0cd49705afdcaf, type: 3}
   - {fileID: 6733888699080222445, guid: 51ce21d0a5d42b5eb9a65cb6b596d5e1, type: 3}
   - {fileID: 1858943784538828727, guid: f352bdc1df4f46ecf96391283c02e2a3, type: 3}
+  asteroidSpawnDelay: 1
   asteroidCount: 8
 --- !u!4 &1093365409
 Transform:
@@ -636,6 +638,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3657204777666470880, guid: 9df3d45a37ae01d4a96089d24842fd94, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 3657204777666470880, guid: 9df3d45a37ae01d4a96089d24842fd94, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.87
+      objectReference: {fileID: 0}
     - target: {fileID: 6455313257165047565, guid: 9df3d45a37ae01d4a96089d24842fd94, type: 3}
       propertyPath: m_Name
       value: Ship
@@ -681,6 +691,7 @@ MonoBehaviour:
   - {fileID: 6647399875214346797, guid: 21d8a472f2a25b024b98a6da808965d9, type: 3}
   - {fileID: 0}
   - {fileID: 0}
+  asteroidSpawnDelay: 1
   asteroidCount: 8
 --- !u!4 &1809916576
 Transform:
