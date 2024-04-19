@@ -7,6 +7,7 @@ public class Asteroids : MonoBehaviour
     [SerializeField] private float size;
     [SerializeField] private Asteroids[] mediumAsteroids;
     [SerializeField] private Asteroids[] smallAsteroids;
+    [SerializeField] private ParticleSystem explosion;
     
     // [SerializeField] private ParticleSystem explosion;
 
@@ -62,6 +63,6 @@ public class Asteroids : MonoBehaviour
         if(gameManager != null){
             gameManager.asteroidCount--;
         }
-        // Instantiate(explosion, transform.position, transform.rotation);
+        Instantiate(explosion, transform.position, transform.rotation);
     }
 }
