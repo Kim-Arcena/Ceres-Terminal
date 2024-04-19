@@ -46,12 +46,12 @@ public class ShipBehavior : MonoBehaviour
     }
     private IEnumerator Invincible(){
         shipCollider.isTrigger = true;
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1f);
         shipCollider.isTrigger = false;
     }
     private IEnumerator FlickerWhileInvincible()
     {
-        float flickerTime = 2f; // Total time for flickering (same as invincible time)
+        float flickerTime = 1f; // Total time for flickering (same as invincible time)
         float flickerDuration = 0.1f; // Duration of each flicker
         float flickerInterval = 0.05f; // Interval between flickers
 
