@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TutorialMovement : MonoBehaviour
 {
@@ -18,8 +19,9 @@ public class TutorialMovement : MonoBehaviour
     [SerializeField] GameObject FadeInManager;
     [SerializeField] GameObject TimePassed;
     [SerializeField] GameObject WaitCanvas;
-    [SerializeField] GameObject NextScenePrompt;
     [SerializeField] GameObject HugeAsteroid;
+    [SerializeField] public string sceneName;
+
 
     [Header("Ship Components")]
     [SerializeField] private Transform spawnBullet;
@@ -47,7 +49,6 @@ public class TutorialMovement : MonoBehaviour
     private float topArrowPressTime = 0f;
     private int spaceBarPressedCounter = 0;
     private GameObject tail;
-    public GameObject nextLevelTrigger;
 
     private void Start()
     {
@@ -129,25 +130,13 @@ public class TutorialMovement : MonoBehaviour
 
     private void showWait(){
         WaitCanvas.SetActive(true);
-        Invoke("NextScene", 10f);
+        Invoke("NextScene", 15f);
         // Invoke("SpawnHugeAsteroid", 0f);
     }
 
     private void NextScene()
     {
-        NextScenePrompt.SetActive(true);
-        BoxCollider collider = nextLevelTrigger.GetComponent<BoxCollider>();
-        if (collider != null)
-        {
-            collider.enabled = true;
-        }
-        else
-        {
-            collider = nextLevelTrigger.AddComponent<BoxCollider>();
-            collider.isTrigger = true;
-            collider.enabled = true;
-            collider.size = new Vector3(75.0f, 120.0f, 1f);
-        }
+        SceneManager.LoadScene(sceneName);
     }
     
     // private void SpawnHugeAsteroid()
