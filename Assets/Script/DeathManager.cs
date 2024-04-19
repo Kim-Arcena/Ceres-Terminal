@@ -16,7 +16,8 @@ public class DeathManager : MonoBehaviour
     {
         if(playerManager.isAlive == false)
         {
-            Invoke("ResetScene", 3f);
+            Debug.Log("Invoking reset scene");
+            Invoke("ResetScene", 1.5f);
         }
     }
 
