@@ -27,8 +27,9 @@ public class Asteroids : MonoBehaviour
         float spawnSpeed = (Random.Range(4f - size, 5f - size)) + 1f;
 
         rb.AddForce(direction * spawnSpeed, ForceMode.Impulse);
-
-        gameManager.asteroidCount++;
+        if(gameManager != null){
+            gameManager.asteroidCount++;
+        }
     }
 
     void OnTriggerEnter(Collider other)
