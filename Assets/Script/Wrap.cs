@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Wrap : MonoBehaviour
 {
-    [SerializeField] private float buffer;
-    [SerializeField] private float cornerLimit;
+    [SerializeField] private float buffer = 0.1f;
+    [SerializeField] private float cornerLimit = 1.1f;
 
     private void Update()
     {
