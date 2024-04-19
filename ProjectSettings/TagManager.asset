@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Bullet
   - BlackHole
+  - HugeAsteroid
   layers:
   - Default
   - TransparentFX
