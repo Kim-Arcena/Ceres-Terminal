@@ -8,7 +8,6 @@ public class Fogs : MonoBehaviour
 
     void Start()
     {
-        // transform.localScale = 0.5f * size * Vector3.one;
 
         Rigidbody rb = GetComponent<Rigidbody>();
 

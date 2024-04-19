@@ -14,6 +14,10 @@ public class FogSpawner : MonoBehaviour
 
     private void Start()
     {
+        Invoke("StartSpawning", 30f);
+    }
+
+    void StartSpawning(){
         StartCoroutine(SpawnAsteroidsWithDelay());
     }
 
@@ -24,7 +28,7 @@ public class FogSpawner : MonoBehaviour
             asteroidSize = Random.Range(0.8f, 1.2f);
             asteroidIndex = Random.Range(0, 3);
             SpawnAsteroid(asteroidSize, asteroidIndex);
-            yield return new WaitForSeconds(asteroidSpawnDelay); // Wait for 0.5 seconds before spawning the next asteroid
+            yield return new WaitForSeconds(asteroidSpawnDelay);
         }
         asteroidsSpawned = true;
     }

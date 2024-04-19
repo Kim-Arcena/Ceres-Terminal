@@ -7,6 +7,9 @@ public class Asteroids : MonoBehaviour
     [SerializeField] private float size;
     [SerializeField] private Asteroids[] mediumAsteroids;
     [SerializeField] private Asteroids[] smallAsteroids;
+    [SerializeField] private ParticleSystem explosion;
+    [SerializeField] private AudioClip destroySound;
+    [SerializeField] private AudioClip hitSound;
     
     // [SerializeField] private ParticleSystem explosion;
 
@@ -24,9 +27,20 @@ public class Asteroids : MonoBehaviour
         float directionX = Random.Range(-1f, 1f);
         float directionZ = Random.Range(-1f, 1f);
         Vector3 direction = new Vector3(directionX, 0f, directionZ).normalized;
-        float spawnSpeed = (Random.Range(4f - size, 5f - size)) + 1f;
+        if(asteroidName[0] == 'l'){
+            float spawnSpeed = -7.5f * 0.9f + 11f;
+            rb.AddForce(direction * spawnSpeed, ForceMode.Impulse);
+        }
+        else if(asteroidName[0] == 'm'){
+            float spawnSpeed = -7.5f * 0.6f + 9f;
+            rb.AddForce(direction * spawnSpeed, ForceMode.Impulse);
+        }
+        else if(asteroidName[0] == 's'){
+            float spawnSpeed = -7.5f * 0.3f + 7f;
+            rb.AddForce(direction * spawnSpeed, ForceMode.Impulse);
+        }
 
-        rb.AddForce(direction * spawnSpeed, ForceMode.Impulse);
+        
         if(gameManager != null){
             gameManager.asteroidCount++;
         }
@@ -37,6 +51,7 @@ public class Asteroids : MonoBehaviour
         if(other.gameObject.tag == "Bullet")
         {
             hits++;
+            AudioSource.PlayClipAtPoint(hitSound, transform.position);
             Destroy(other.gameObject); //destroys the bullet
             if(hits == 3 && asteroidName[0] == 'l'){
                 OnDestroy();
@@ -62,6 +77,7 @@ public class Asteroids : MonoBehaviour
         if(gameManager != null){
             gameManager.asteroidCount--;
         }
-        // Instantiate(explosion, transform.position, transform.rotation);
+        Instantiate(explosion, transform.position, transform.rotation);
+        AudioSource.PlayClipAtPoint(destroySound, transform.position);
     }
 }

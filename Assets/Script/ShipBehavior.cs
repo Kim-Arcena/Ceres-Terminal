@@ -5,10 +5,14 @@ using UnityEngine;
 public class ShipBehavior : MonoBehaviour
 {
     private PlayerMovement playerManager;
+    [SerializeField] private GameObject explosion;
+    [SerializeField] AudioClip accelarationSound;
+    private AudioSource audioSource;
 
     void Start()
     {
         playerManager = FindObjectOfType<PlayerMovement>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -21,6 +25,7 @@ public class ShipBehavior : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Obstacle"))
         {
+            Instantiate(explosion, transform.position, transform.rotation);
             playerManager.isAlive = false;
             Destroy(collision.gameObject);
             Destroy(gameObject);
@@ -30,5 +35,14 @@ public class ShipBehavior : MonoBehaviour
         {
             Debug.Log("Big asteroid hit");
         }
+    }
+    public void PlayAccelarationSound()
+    {
+        audioSource.clip = accelarationSound;
+        audioSource.Play();
+    }
+    public void StopAccelarationSound()
+    {
+        audioSource.Stop();
     }
 }

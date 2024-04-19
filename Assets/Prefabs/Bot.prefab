@@ -60,7 +60,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 4
   m_CollisionDetection: 0
 --- !u!114 &2655998760240793911
 MonoBehaviour:
@@ -80,6 +80,8 @@ MonoBehaviour:
   bulletForce: 500
   fireInterval: 1
   fireTimer: 0
+  shootSound: {fileID: 8300000, guid: 96f566091c8bf7d41baba5425f1d7afd, type: 3}
+  destroySound: {fileID: 8300000, guid: b7bbc093fec49a24bbc7f125785e066f, type: 3}
 --- !u!65 &2662792551045467239
 BoxCollider:
   m_ObjectHideFlags: 0
