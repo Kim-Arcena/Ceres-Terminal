@@ -14,6 +14,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform spawnBullet;
     [SerializeField] private Rigidbody bulletPrefab;
     [SerializeField] private float bulletSpeed = 20f;
+    [SerializeField] private AudioClip bulletSound;
+    private ShipBehavior shipBehavior;
     private GameObject tail;
 
     private Rigidbody shipRb;
@@ -24,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
         shipRb = GetComponent<Rigidbody>();
         tail = this.gameObject.transform.GetChild(1).gameObject;
         tail.SetActive(false);
+        shipBehavior = GetComponent<ShipBehavior>();
 
     }
     private void Update()
@@ -42,8 +45,14 @@ public class PlayerMovement : MonoBehaviour
             shipRb.AddForce(transform.up * acceleration);
             shipRb.velocity = Vector3.ClampMagnitude(shipRb.velocity, maxMoveSpeed);
             tail.SetActive(true);
+            Debug.Log("Accelerating");
         }else{
-            tail.SetActive(false);
+            if(tail != null)
+            {
+                tail.SetActive(false);
+                shipBehavior.PlayAccelarationSound();
+                // shipBehavior.StopAccelarationSound();
+            }
         }
     }
     private void ShipRotation()
@@ -71,6 +80,7 @@ public class PlayerMovement : MonoBehaviour
             }
             bullet.velocity = shipSpeed * shipDirection;
             bullet.AddForce(spawnBullet.up * bulletSpeed, ForceMode.Impulse);
+            AudioSource.PlayClipAtPoint(bulletSound, transform.position,2f);
         }
     }
 
