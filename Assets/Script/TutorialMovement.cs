@@ -28,6 +28,7 @@ public class TutorialMovement : MonoBehaviour
     [SerializeField] private Rigidbody bulletPrefab;
     [SerializeField] private float bulletSpeed = 20f;
 
+    private ShipBehavior shipBehavior;
     private Rigidbody shipRb;
     private bool isAlive = true;
     private bool isAccelerating = false;
@@ -56,6 +57,7 @@ public class TutorialMovement : MonoBehaviour
         shipRb = GetComponent<Rigidbody>();
         tail = this.gameObject.transform.GetChild(1).gameObject;
         tail.SetActive(false);
+        shipBehavior = GetComponent<ShipBehavior>();
     }
 
     private void Update()
@@ -63,7 +65,7 @@ public class TutorialMovement : MonoBehaviour
         if (rotateTutorial)
         {
             ShipRotation();
-
+            // ShipAccelaration();
             if (leftArrowPressed)
                 leftArrowPressTime += Time.deltaTime;
 
@@ -74,6 +76,8 @@ public class TutorialMovement : MonoBehaviour
             {
                 thrusterTutorial = true;
                 acceleration = 10f;
+            }else{
+                shipBehavior.PlayAccelarationSound();
             }
         }
         
@@ -188,6 +192,7 @@ public class TutorialMovement : MonoBehaviour
             tail.SetActive(true);
         }
         else{
+            shipBehavior.PlayAccelarationSound();
             topArrowPressed = false;
             tail.SetActive(false);
         }
