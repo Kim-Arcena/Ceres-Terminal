@@ -18,6 +18,7 @@ public class TutorialMovement : MonoBehaviour
     [SerializeField] GameObject FadeInManager;
     [SerializeField] GameObject TimePassed;
     [SerializeField] GameObject WaitCanvas;
+    [SerializeField] GameObject NextScenePrompt;
     [SerializeField] GameObject HugeAsteroid;
 
     [Header("Ship Components")]
@@ -131,6 +132,7 @@ public class TutorialMovement : MonoBehaviour
 
     private void NextScene()
     {
+        NextScenePrompt.SetActive(true);
         BoxCollider collider = nextLevelTrigger.GetComponent<BoxCollider>();
         if (collider != null)
         {
