@@ -21,7 +21,7 @@ public class Timer : MonoBehaviour
 
     void Update()
     {
-        if (playerManager.isAlive)
+        if (playerManager.isAlive && setTrigger == false)
         {
             currentTime -= Time.deltaTime;
 
