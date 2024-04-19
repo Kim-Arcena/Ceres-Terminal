@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -14,7 +15,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Rigidbody bulletPrefab;
     [SerializeField] private float bulletSpeed = 20f;
     private GameObject tail;
-
 
     private Rigidbody shipRb;
     public bool isAlive = true;
