@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TutorialMovement : MonoBehaviour
 {
@@ -19,6 +20,8 @@ public class TutorialMovement : MonoBehaviour
     [SerializeField] GameObject TimePassed;
     [SerializeField] GameObject WaitCanvas;
     [SerializeField] GameObject HugeAsteroid;
+    [SerializeField] public string sceneName;
+
 
     [Header("Ship Components")]
     [SerializeField] private Transform spawnBullet;
@@ -127,23 +130,29 @@ public class TutorialMovement : MonoBehaviour
 
     private void showWait(){
         WaitCanvas.SetActive(true);
+        Invoke("NextScene", 15f);
         // Invoke("SpawnHugeAsteroid", 0f);
     }
-    
-    private void SpawnHugeAsteroid()
-    {
-        HugeAsteroid.SetActive(true);
 
-        SphereCollider sphereCollider = GetComponent<SphereCollider>();
-        if (sphereCollider != null)
-        {
-            sphereCollider.isTrigger = false;
-        }
-        else
-        {
-            Debug.LogWarning("SphereCollider component not found on HugeAsteroid GameObject!");
-        }
+    private void NextScene()
+    {
+        SceneManager.LoadScene(sceneName);
     }
+    
+    // private void SpawnHugeAsteroid()
+    // {
+    //     HugeAsteroid.SetActive(true);
+
+    //     SphereCollider sphereCollider = GetComponent<SphereCollider>();
+    //     if (sphereCollider != null)
+    //     {
+    //         sphereCollider.isTrigger = false;
+    //     }
+    //     else
+    //     {
+    //         Debug.LogWarning("SphereCollider component not found on HugeAsteroid GameObject!");
+    //     }
+    // }
 
 
     private void ShipRotation()
