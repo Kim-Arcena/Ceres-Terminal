@@ -24,7 +24,10 @@ public class ParabolicMovement : MonoBehaviour
 
         float zOffset = -height * Mathf.Sin(Mathf.PI * fracJourney);
 
-        transform.position = Vector3.Lerp(startPoint, endPoint, fracJourney) + Vector3.forward * zOffset;
+        Vector3 newPosition = Vector3.Lerp(startPoint, endPoint, fracJourney) + Vector3.forward * zOffset;
+        newPosition.y = 17;
+
+        transform.position = newPosition;
 
         if (fracJourney >= 1.0f)
         {
