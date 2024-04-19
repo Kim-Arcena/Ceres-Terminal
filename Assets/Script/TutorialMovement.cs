@@ -27,6 +27,7 @@ public class TutorialMovement : MonoBehaviour
     [SerializeField] private Transform spawnBullet;
     [SerializeField] private Rigidbody bulletPrefab;
     [SerializeField] private float bulletSpeed = 20f;
+    [SerializeField] private AudioClip bulletSound;
 
     private ShipBehavior shipBehavior;
     private Rigidbody shipRb;
@@ -202,6 +203,7 @@ public class TutorialMovement : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space))
         {
+            AudioSource.PlayClipAtPoint(bulletSound, transform.position);
             Rigidbody bullet = Instantiate(bulletPrefab, spawnBullet.position, Quaternion.identity);
             Vector3 shipVelocity = shipRb.velocity;
             Vector3 shipDirection = transform.rotation * Vector3.up;
