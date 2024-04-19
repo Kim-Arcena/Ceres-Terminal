@@ -41,7 +41,7 @@ public class LevelTwoIntroductionManager : MonoBehaviour
 
         if(moveShip && secondEvent)
         {
-            shipPlayer.transform.Translate((secondPosition + shipPlayer.transform.position).normalized * moveSpeed * Time.deltaTime);
+            shipPlayer.transform.Translate((secondPosition + shipPlayer.transform.position).normalized * 3f * Time.deltaTime);
             Debug.Log(Vector3.Distance(shipPlayer.transform.position, secondPosition));
             if (Vector3.Distance(shipPlayer.transform.position, secondPosition) < 0.25f)
             {
