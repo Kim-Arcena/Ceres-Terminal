@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -16,7 +17,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private AudioClip bulletSound;
     private ShipBehavior shipBehavior;
     private GameObject tail;
-
 
     private Rigidbody shipRb;
     public bool isAlive = true;
