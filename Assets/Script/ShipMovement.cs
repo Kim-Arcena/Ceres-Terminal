@@ -16,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
 
 
     private Rigidbody shipRb;
-    private bool isAlive = true;
+    public bool isAlive = true;
     
 
     private void Start(){

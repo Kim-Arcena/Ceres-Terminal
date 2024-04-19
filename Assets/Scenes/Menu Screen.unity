@@ -242,7 +242,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b52531b42fa524cdaefeb1d534623ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scenename: Level 1
+  scenename: Tutorial
 --- !u!1 &469090274 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 25161031169624830, guid: e41a995939fb0337fbd80ded5a9e5bdc, type: 3}
@@ -436,7 +436,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 907486687}
   serializedVersion: 4
-  m_Mass: 0.5
+  m_Mass: 0.1
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -485,7 +485,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b52531b42fa524cdaefeb1d534623ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scenename: Level 1
+  scenename: Tutorial
 --- !u!65 &919375610
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -759,7 +759,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1237639632}
   serializedVersion: 4
-  m_Mass: 0.5
+  m_Mass: 0.1
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -1331,7 +1331,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b52531b42fa524cdaefeb1d534623ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scenename: Level 1
+  scenename: Tutorial
 --- !u!65 &1848368395
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1451,7 +1451,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b52531b42fa524cdaefeb1d534623ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scenename: Level 1
+  scenename: Tutorial
 --- !u!65 &2007128680
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1522,7 +1522,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2146979237}
   serializedVersion: 4
-  m_Mass: 0.5
+  m_Mass: 0.1
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}

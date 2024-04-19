@@ -7,6 +7,7 @@ public class Asteroids : MonoBehaviour
     [SerializeField] private float size;
     [SerializeField] private Asteroids[] mediumAsteroids;
     [SerializeField] private Asteroids[] smallAsteroids;
+    
     // [SerializeField] private ParticleSystem explosion;
 
     public GameManager gameManager;
