@@ -48,6 +48,7 @@ public class TutorialMovement : MonoBehaviour
 
     private void Start()
     {
+        SphereCollider sphereCollider = GetComponent<SphereCollider>();
         shipRb = GetComponent<Rigidbody>();
     }
 
@@ -123,14 +124,24 @@ public class TutorialMovement : MonoBehaviour
 
     private void showWait(){
         WaitCanvas.SetActive(true);
-        Invoke("SpawnAsteroid", 2f);
+        // Invoke("SpawnHugeAsteroid", 0f);
     }
     
-    
-    private void SpawnAsteroid(){
+    private void SpawnHugeAsteroid()
+    {
         HugeAsteroid.SetActive(true);
 
+        SphereCollider sphereCollider = GetComponent<SphereCollider>();
+        if (sphereCollider != null)
+        {
+            sphereCollider.isTrigger = false;
+        }
+        else
+        {
+            Debug.LogWarning("SphereCollider component not found on HugeAsteroid GameObject!");
+        }
     }
+
 
     private void ShipRotation()
     {
