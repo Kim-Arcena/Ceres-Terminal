@@ -2587,7 +2587,7 @@ MonoBehaviour:
   TimePassed: {fileID: 402571147}
   WaitCanvas: {fileID: 1050964054}
   HugeAsteroid: {fileID: 1683207230}
-  sceneName: Level 1
+  sceneName: Level 1 Introduction
   spawnBullet: {fileID: 2124856482}
   bulletPrefab: {fileID: 8449798723006539125, guid: 2c98ed724d2ed5a44b60e5f8a13cd96c, type: 3}
   bulletSpeed: 20
