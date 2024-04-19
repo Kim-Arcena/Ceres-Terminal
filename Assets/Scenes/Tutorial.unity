@@ -2703,6 +2703,7 @@ MonoBehaviour:
   spawnBullet: {fileID: 2124856482}
   bulletPrefab: {fileID: 8449798723006539125, guid: 2c98ed724d2ed5a44b60e5f8a13cd96c, type: 3}
   bulletSpeed: 20
+  bulletSound: {fileID: 8300000, guid: 4e7920092e7be8f4e8d88060a7828fb0, type: 3}
 --- !u!4 &1922501175 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3657204777666470880, guid: 9df3d45a37ae01d4a96089d24842fd94, type: 3}
