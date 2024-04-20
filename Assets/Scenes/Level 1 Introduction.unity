@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.4964127, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -324,7 +324,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buffer: 0.5
-  cornerLimit: 1.4
 --- !u!114 &157261338
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -502,7 +501,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buffer: 0.5
-  cornerLimit: 1.4
 --- !u!212 &381968260
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -649,7 +647,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buffer: 0.5
-  cornerLimit: 1.4
 --- !u!114 &426123243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -762,7 +759,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buffer: 0.5
-  cornerLimit: 1.4
 --- !u!114 &445936473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1400,7 +1396,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buffer: 0.1
-  cornerLimit: 0
 --- !u!212 &957988426
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1500,7 +1495,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buffer: 0.4
-  cornerLimit: 1.5
 --- !u!114 &998605432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1883,7 +1877,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buffer: 0.5
-  cornerLimit: 1.4
 --- !u!212 &1318661219
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2100,7 +2093,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buffer: 0.5
-  cornerLimit: 1.4
 --- !u!212 &1579498061
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2258,7 +2250,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 8287ecf47b8a62d4983fab95c5dfe82b, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2847,7 +2839,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buffer: 0.5
-  cornerLimit: 1.4
 --- !u!114 &2007955484
 MonoBehaviour:
   m_ObjectHideFlags: 0

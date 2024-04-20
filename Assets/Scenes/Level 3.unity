@@ -183,7 +183,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buffer: 0.5
-  cornerLimit: 1.4
 --- !u!212 &36019679
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -892,7 +891,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buffer: 0.4
-  cornerLimit: 1.5
 --- !u!114 &708421532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -981,7 +979,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buffer: 0.5
-  cornerLimit: 1.4
 --- !u!114 &797763003
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1152,7 +1149,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buffer: 0.5
-  cornerLimit: 1.4
 --- !u!212 &839384585
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1252,7 +1248,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buffer: 0.5
-  cornerLimit: 1.4
 --- !u!114 &846550263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1525,7 +1520,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buffer: 0.5
-  cornerLimit: 1.4
 --- !u!114 &905194137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1843,7 +1837,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buffer: 0.5
-  cornerLimit: 1.4
 --- !u!114 &1290141627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2022,7 +2015,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buffer: 0.5
-  cornerLimit: 1.4
 --- !u!212 &1390113901
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2494,7 +2486,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 92a6cafdd6adde541bc1c5404154ccb6, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
