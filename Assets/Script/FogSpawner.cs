@@ -1,20 +1,42 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class FogSpawner : MonoBehaviour
 {
     [SerializeField] private Fogs[] asteroidPrefabs;
     [SerializeField] private float asteroidSpawnDelay = 1f;
+    [SerializeField] private GameObject FadeOutManager;
 
     public int asteroidCount = 3;
     private int level = 1;
     private float asteroidSize;
     private int asteroidIndex;
     private bool asteroidsSpawned = false;
+    private int maxCount = 1;
 
     private void Start()
     {
-        Invoke("StartSpawning", 30f);
+        Invoke("StartSpawning", 20f);
+    }
+
+    private void Update(){
+        Debug.Log("asteroidCount " + asteroidCount.ToString() + "maxCount " + maxCount.ToString());
+
+        if(asteroidCount == maxCount){
+            FadeOutManager.SetActive(true);
+            Invoke("NextScene", 8f);
+        }
+    }
+
+    private void enableFadeOut(){
+        
+    }
+
+    private void NextScene()
+    {
+        SceneManager.LoadScene("Menu Screen");
     }
 
     void StartSpawning(){
@@ -29,6 +51,7 @@ public class FogSpawner : MonoBehaviour
             asteroidIndex = Random.Range(0, 3);
             SpawnAsteroid(asteroidSize, asteroidIndex);
             yield return new WaitForSeconds(asteroidSpawnDelay);
+            maxCount += 1;
         }
         asteroidsSpawned = true;
     }
