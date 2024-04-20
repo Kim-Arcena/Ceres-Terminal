@@ -5,7 +5,6 @@ using UnityEngine;
 public class Wrap : MonoBehaviour
 {
     [SerializeField] private float buffer = 0.1f;
-    [SerializeField] private float cornerLimit = 1.1f;
 
     private void Update()
     {
@@ -15,20 +14,20 @@ public class Wrap : MonoBehaviour
 
         if (viewportPosition.x < -buffer)
         {
-            moveAdjustment.x += cornerLimit;
+            moveAdjustment.x += 1.1f;
         }
         else if (viewportPosition.x > 1 + buffer)
         {
-            moveAdjustment.x -= cornerLimit;
+            moveAdjustment.x -= 1.1f;
         }
 
         if (viewportPosition.y < -buffer)
         {
-            moveAdjustment.y += cornerLimit;
+            moveAdjustment.y += 1.1f;
         }
         else if (viewportPosition.y > 1 + buffer)
         {
-            moveAdjustment.y -= cornerLimit;
+            moveAdjustment.y -= 1.1f;
         }
 
         viewportPosition += moveAdjustment;
