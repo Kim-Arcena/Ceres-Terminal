@@ -43,7 +43,7 @@ public class FogSpawner : MonoBehaviour
 
     void StartSpawning(){
         StartCoroutine(SpawnAsteroidsWithDelay());
-    }
+    }   
 
     private IEnumerator SpawnAsteroidsWithDelay()
     {
