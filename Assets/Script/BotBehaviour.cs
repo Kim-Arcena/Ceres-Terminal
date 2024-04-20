@@ -8,7 +8,7 @@ public class BotBehaviour : MonoBehaviour
     [SerializeField] public float movementSpeed = 2.5f;
     public GameObject bulletPrefab;
     public Transform firePoint;
-    [SerializeField] public float bulletForce = 500f;
+    [SerializeField] public float bulletForce = 250f;
     [SerializeField] public float fireInterval = 3f;
 
     private GameObject player;

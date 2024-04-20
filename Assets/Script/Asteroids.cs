@@ -28,15 +28,15 @@ public class Asteroids : MonoBehaviour
         float directionZ = Random.Range(-1f, 1f);
         Vector3 direction = new Vector3(directionX, 0f, directionZ).normalized;
         if(asteroidName[0] == 'l'){
-            float spawnSpeed = -7.5f * 0.9f + 11f;
+            float spawnSpeed = -7.5f * 5f + 11f;
             rb.AddForce(direction * spawnSpeed, ForceMode.Impulse);
         }
         else if(asteroidName[0] == 'm'){
-            float spawnSpeed = -7.5f * 0.6f + 9f;
+            float spawnSpeed = -7.5f * 4f + 9f;
             rb.AddForce(direction * spawnSpeed, ForceMode.Impulse);
         }
         else if(asteroidName[0] == 's'){
-            float spawnSpeed = -7.5f * 0.3f + 7f;
+            float spawnSpeed = -7.5f * 3f + 7f;
             rb.AddForce(direction * spawnSpeed, ForceMode.Impulse);
         }
 
