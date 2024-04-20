@@ -148,6 +148,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0055792875a2a2b98bda8ae17a23d2cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buffer: 0.1
+  cornerLimit: 1.1
 --- !u!114 &2499182132943527286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -174,4 +176,5 @@ MonoBehaviour:
   - {fileID: 8005820436967139015, guid: 18c7a7f40560e3035aa350e29f4680a8, type: 3}
   explosion: {fileID: 7423839949581511795, guid: 8f3e90fb3ecf85d448865fe153b6401f, type: 3}
   destroySound: {fileID: 8300000, guid: 0403f76fc412b054dbc02336703e95a6, type: 3}
+  hitSound: {fileID: 8300000, guid: 4b8e80d6ac911044f8b7c7b9c09dcab3, type: 3}
   gameManager: {fileID: 0}
