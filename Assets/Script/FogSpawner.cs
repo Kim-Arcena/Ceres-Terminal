@@ -8,6 +8,7 @@ public class FogSpawner : MonoBehaviour
     [SerializeField] private Fogs[] asteroidPrefabs;
     [SerializeField] private float asteroidSpawnDelay = 1f;
     [SerializeField] private GameObject FadeOutManager;
+    [SerializeField] private GameObject ContinueCanvas;
 
     public int asteroidCount = 3;
     private int level = 1;
@@ -36,7 +37,8 @@ public class FogSpawner : MonoBehaviour
 
     private void NextScene()
     {
-        SceneManager.LoadScene("Menu Screen");
+        // SceneManager.LoadScene("Menu Screen");
+        ContinueCanvas.SetActive(true);
     }
 
     void StartSpawning(){
