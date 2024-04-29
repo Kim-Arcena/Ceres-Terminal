@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.4964127, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -183,7 +183,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buffer: 0.5
-  cornerLimit: 1.4
 --- !u!212 &36019679
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -892,7 +891,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buffer: 0.4
-  cornerLimit: 1.5
 --- !u!114 &708421532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -981,7 +979,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buffer: 0.5
-  cornerLimit: 1.4
 --- !u!114 &797763003
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1152,7 +1149,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buffer: 0.5
-  cornerLimit: 1.4
 --- !u!212 &839384585
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1252,7 +1248,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buffer: 0.5
-  cornerLimit: 1.4
 --- !u!114 &846550263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1462,7 +1457,7 @@ MonoBehaviour:
   - {fileID: 6733888699080222445, guid: 51ce21d0a5d42b5eb9a65cb6b596d5e1, type: 3}
   - {fileID: 1858943784538828727, guid: f352bdc1df4f46ecf96391283c02e2a3, type: 3}
   asteroidSpawnDelay: 1
-  asteroidCount: 5
+  asteroidCount: 4
 --- !u!4 &889447799
 Transform:
   m_ObjectHideFlags: 0
@@ -1525,7 +1520,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buffer: 0.5
-  cornerLimit: 1.4
 --- !u!114 &905194137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1733,7 +1727,7 @@ MonoBehaviour:
   - {fileID: 2890689877681927051, guid: 19185330ac9a1c7d996f85390353c0f6, type: 3}
   - {fileID: 8465248550429191236, guid: dbf180aa393066a708518405efabf6ea, type: 3}
   - {fileID: 4110608927498424788, guid: 03658c74d94992ab1a014236dae9f4d5, type: 3}
-  asteroidSpawnDelay: 1
+  asteroidSpawnDelay: 2
   asteroidCount: 4
 --- !u!4 &957818205
 Transform:
@@ -1843,7 +1837,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buffer: 0.5
-  cornerLimit: 1.4
 --- !u!114 &1290141627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1945,7 +1938,7 @@ MonoBehaviour:
   - {fileID: 6647399875214346797, guid: 21d8a472f2a25b024b98a6da808965d9, type: 3}
   - {fileID: 0}
   - {fileID: 0}
-  asteroidSpawnDelay: 1
+  asteroidSpawnDelay: 3
   asteroidCount: 3
 --- !u!4 &1386024095
 Transform:
@@ -2022,7 +2015,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buffer: 0.5
-  cornerLimit: 1.4
 --- !u!212 &1390113901
 SpriteRenderer:
   m_ObjectHideFlags: 0
