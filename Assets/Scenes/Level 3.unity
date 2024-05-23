@@ -1452,10 +1452,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   asteroidPrefabs:
-  - {fileID: 6699092618566436961, guid: cafcf15d8dc669589b8de990a3e12534, type: 3}
-  - {fileID: 4810909102507745952, guid: aa6cfd12f0a4729afb0cd49705afdcaf, type: 3}
-  - {fileID: 6733888699080222445, guid: 51ce21d0a5d42b5eb9a65cb6b596d5e1, type: 3}
-  - {fileID: 1858943784538828727, guid: f352bdc1df4f46ecf96391283c02e2a3, type: 3}
+  - {fileID: 4729490995576684666, guid: 85c14515e14f81677ac4f15ce83dbe0c, type: 3}
+  - {fileID: 7946888521741496869, guid: e916097d25f057053b4415bd840f6af3, type: 3}
+  - {fileID: 1464284876872903422, guid: 2e1d6f8e67b7d450e813a403b4f48759, type: 3}
+  - {fileID: 8756353409040489837, guid: 6458417ac97132f34b5c57ad70dd7e0c, type: 3}
   asteroidSpawnDelay: 1
   asteroidCount: 4
 --- !u!4 &889447799
@@ -1722,11 +1722,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   asteroidPrefabs:
-  - {fileID: 3412916494451247133, guid: 7c4d498aefe816f468cbb6fe6e851650, type: 3}
-  - {fileID: 3343732045268376516, guid: 561a6a925fae65094874637a778960a5, type: 3}
-  - {fileID: 2890689877681927051, guid: 19185330ac9a1c7d996f85390353c0f6, type: 3}
-  - {fileID: 8465248550429191236, guid: dbf180aa393066a708518405efabf6ea, type: 3}
-  - {fileID: 4110608927498424788, guid: 03658c74d94992ab1a014236dae9f4d5, type: 3}
+  - {fileID: 57302056529339747, guid: 7c4768a329d7002819bf995d5d5ecae4, type: 3}
+  - {fileID: 6103770173517433307, guid: 5c436fe96be24dc18acdb3d712d88ab6, type: 3}
+  - {fileID: 6180845315407434802, guid: 286f71f8c56f3a92aa47bc6fc93af647, type: 3}
+  - {fileID: 2163919982910322540, guid: e7c6898f022fb684e972c98e11eafd52, type: 3}
+  - {fileID: 338539314525481607, guid: 1b0340c309368138a9bd2b93c2c7cbf5, type: 3}
   asteroidSpawnDelay: 2
   asteroidCount: 4
 --- !u!4 &957818205
@@ -1932,12 +1932,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   asteroidPrefabs:
-  - {fileID: 6007307093356730188, guid: 637ec67862f3696f4bf5505c506c0e6c, type: 3}
-  - {fileID: 6783417226435512761, guid: abea9e67bf8a4102da35308907466d47, type: 3}
-  - {fileID: 1354388785900346730, guid: b06e80c9bdc2f0fb3a5e4678247f6a2d, type: 3}
-  - {fileID: 6647399875214346797, guid: 21d8a472f2a25b024b98a6da808965d9, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1107407289027455402, guid: 3a59336d981dace8eb51aba8c5c6fe2e, type: 3}
+  - {fileID: 6453188741833070292, guid: 1787ba0c535ea1d9a8e6135c1d2b314a, type: 3}
+  - {fileID: 6823403123869778419, guid: 18b7df57dd2d92ddebfd95249ad7e0d0, type: 3}
+  - {fileID: 4341858809674569594, guid: f3b410f79df216a8588a23a7897a62bf, type: 3}
+  - {fileID: 1695732449111908306, guid: 21cdfb8325510e7a68d27ea47af5ab3c, type: 3}
+  - {fileID: 5546489815578952, guid: f7898ffde01ef3907bef1a861d66e19a, type: 3}
   asteroidSpawnDelay: 3
   asteroidCount: 3
 --- !u!4 &1386024095
