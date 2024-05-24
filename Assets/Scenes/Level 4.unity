@@ -408,13 +408,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   asteroidPrefabs:
-  - {fileID: 3412916494451247133, guid: 7c4d498aefe816f468cbb6fe6e851650, type: 3}
-  - {fileID: 3343732045268376516, guid: 561a6a925fae65094874637a778960a5, type: 3}
-  - {fileID: 2890689877681927051, guid: 19185330ac9a1c7d996f85390353c0f6, type: 3}
-  - {fileID: 8465248550429191236, guid: dbf180aa393066a708518405efabf6ea, type: 3}
-  - {fileID: 4110608927498424788, guid: 03658c74d94992ab1a014236dae9f4d5, type: 3}
-  asteroidSpawnDelay: 1
-  asteroidCount: 8
+  - {fileID: 314503030597176834, guid: 778aee7a3f874817a86db54c213a4baa, type: 3}
+  - {fileID: 7815079077862479936, guid: 4749f7d04f60cc0d597fd77111a4721e, type: 3}
+  - {fileID: 2907499500935959625, guid: 65c400dfaa43f6b4f9a1ac4733ad416b, type: 3}
+  - {fileID: 390742846273404447, guid: d40148c4ca01ca8b2b5d5dfa79fe1a40, type: 3}
+  - {fileID: 5023704147877563260, guid: a8e792217328abe188abf0d3b77cb405, type: 3}
+  asteroidSpawnDelay: 2
+  asteroidCount: 4
 --- !u!4 &548370495
 Transform:
   m_ObjectHideFlags: 0
@@ -554,6 +554,59 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.5
+--- !u!1 &644880442
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 644880444}
+  - component: {fileID: 644880443}
+  m_Layer: 0
+  m_Name: LargeAsteroidManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &644880443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 644880442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa4b8be08acd07afc9bf9d22468525c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  asteroidPrefabs:
+  - {fileID: 20676101761160099, guid: ee401ee8c9d5298e9b79f065b77ac175, type: 3}
+  - {fileID: 7256460750116236988, guid: e5fd4c2088131cf67aa357fca095d077, type: 3}
+  - {fileID: 9088447163452989455, guid: 84f4bdf524a42aba7809f8f6ba035331, type: 3}
+  - {fileID: 5312354236646243884, guid: a831ae8808baf4f7aa84a13a05e10283, type: 3}
+  - {fileID: 7260277893992752504, guid: cc6b02a3f9bd4e426a712d93f19519e4, type: 3}
+  - {fileID: 3118831869861048987, guid: ff5b65fac3ded1cc9b60c343d03a4b7e, type: 3}
+  asteroidSpawnDelay: 3
+  asteroidCount: 3
+--- !u!4 &644880444
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 644880442}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.1594882, y: -40, z: 27.160904}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &740188941 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3367749023841084398, guid: 9df3d45a37ae01d4a96089d24842fd94, type: 3}
@@ -1592,12 +1645,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   asteroidPrefabs:
-  - {fileID: 6699092618566436961, guid: cafcf15d8dc669589b8de990a3e12534, type: 3}
-  - {fileID: 4810909102507745952, guid: aa6cfd12f0a4729afb0cd49705afdcaf, type: 3}
-  - {fileID: 6733888699080222445, guid: 51ce21d0a5d42b5eb9a65cb6b596d5e1, type: 3}
-  - {fileID: 1858943784538828727, guid: f352bdc1df4f46ecf96391283c02e2a3, type: 3}
+  - {fileID: 4890036487026757785, guid: 05475ac9039b1327081cd5a41f9cd2e9, type: 3}
+  - {fileID: 895691187088645324, guid: 3e02ee249a268134799874a5ab954822, type: 3}
+  - {fileID: 9008538288787008797, guid: 12a2866cb1baf89658ac332feecbb67d, type: 3}
+  - {fileID: 7445963517188706801, guid: bd6dc3f1af9d020e9b89a1eb0a10953f, type: 3}
   asteroidSpawnDelay: 1
-  asteroidCount: 8
+  asteroidCount: 5
 --- !u!4 &1093365409
 Transform:
   m_ObjectHideFlags: 0
@@ -2451,59 +2504,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4890245354726086, guid: 7baa347ea8e001e48bb257a28057c6e8, type: 3}
   m_PrefabInstance: {fileID: 1774200393}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1809916574
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1809916576}
-  - component: {fileID: 1809916575}
-  m_Layer: 0
-  m_Name: LargeAsteroidManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1809916575
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1809916574}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa4b8be08acd07afc9bf9d22468525c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  asteroidPrefabs:
-  - {fileID: 6007307093356730188, guid: 637ec67862f3696f4bf5505c506c0e6c, type: 3}
-  - {fileID: 6783417226435512761, guid: abea9e67bf8a4102da35308907466d47, type: 3}
-  - {fileID: 1354388785900346730, guid: b06e80c9bdc2f0fb3a5e4678247f6a2d, type: 3}
-  - {fileID: 6647399875214346797, guid: 21d8a472f2a25b024b98a6da808965d9, type: 3}
-  - {fileID: 2420826334762766439, guid: 36d65a8793359d685bc0cf8e6d866882, type: 3}
-  - {fileID: 7403967108857052600, guid: 119d55180a44dde00b52a90097e8a3dc, type: 3}
-  asteroidSpawnDelay: 1
-  asteroidCount: 8
---- !u!4 &1809916576
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1809916574}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.1594882, y: -40, z: 27.160904}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1884886173
 GameObject:
   m_ObjectHideFlags: 0
@@ -3051,7 +3051,7 @@ SceneRoots:
   - {fileID: 816841014}
   - {fileID: 1400316310}
   - {fileID: 1512626467}
-  - {fileID: 1809916576}
+  - {fileID: 644880444}
   - {fileID: 548370495}
   - {fileID: 1093365409}
   - {fileID: 851155264}
@@ -3059,3 +3059,5 @@ SceneRoots:
   - {fileID: 1080891431}
   - {fileID: 2013838059}
   - {fileID: 430130770}
+  - {fileID: 1415625521}
+  - {fileID: 1281798491}

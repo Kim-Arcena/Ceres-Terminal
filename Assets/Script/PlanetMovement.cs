@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlanetMovement : MonoBehaviour
 {
-   public float speed = 5f; // Speed of movement
+   public float speed = 7.5f; // Speed of movement
 
     void Update()
     {

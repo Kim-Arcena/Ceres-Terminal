@@ -14,6 +14,7 @@ public class DeathManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log("playerManager.isAlive " + playerManager.isAlive.ToString());
         if(playerManager.isAlive == false)
         {
             Debug.Log("Invoking reset scene");
