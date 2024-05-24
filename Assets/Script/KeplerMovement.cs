@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class ParabolicMovement : MonoBehaviour
 {
-    private Vector3 startPoint = new Vector3(-50f, 0f, -12f);
-    private Vector3 endPoint = new Vector3(50f, 0f, -12f);
+    private Vector3 startPoint = new Vector3(-50f, 15f, -9f);
+    private Vector3 endPoint = new Vector3(50f, 15f, -9f);
     public float height = 5f;
     public float speed = 1f;
 

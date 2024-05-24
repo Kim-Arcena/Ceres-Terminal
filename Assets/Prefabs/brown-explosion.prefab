@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1088339540353187545}
   m_Layer: 0
   m_Name: brown-explosion
-  m_TagString: Untagged
+  m_TagString: BrownExplosion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

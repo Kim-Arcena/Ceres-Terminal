@@ -9,6 +9,8 @@ TagManager:
   - Bullet
   - BlackHole
   - HugeAsteroid
+  - BrownExplosion
+  - OneShotAudio
   layers:
   - Default
   - TransparentFX
