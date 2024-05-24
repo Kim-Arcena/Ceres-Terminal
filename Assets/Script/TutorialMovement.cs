@@ -7,7 +7,7 @@ public class TutorialMovement : MonoBehaviour
 {
     [Header("Ship Movement")]
     [SerializeField] private float maxMoveSpeed = 10f;
-    [SerializeField] private float rotateSpeed = 180f;
+    [SerializeField] private float rotateSpeed = 5000f;
     [SerializeField] private float acceleration = 10f;
     
     [SerializeField] GameObject rotateCanvas;
@@ -75,7 +75,8 @@ public class TutorialMovement : MonoBehaviour
             if (leftArrowPressTime >= 1f || rightArrowPressTime >= 1f)
             {
                 thrusterTutorial = true;
-                acceleration = 10f;
+                rotateTutorial = false;
+                // acceleration = 10f;
             }else{
                 shipBehavior.PlayAccelarationSound();
             }
@@ -90,6 +91,7 @@ public class TutorialMovement : MonoBehaviour
             
             if (topArrowPressTime >= 1f){
                 shooterTutorial = true;
+                thrusterTutorial = false;
             }
             rotateCanvas.SetActive(false);
             arrowUPCanvas.SetActive(true);
