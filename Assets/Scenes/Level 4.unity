@@ -408,11 +408,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   asteroidPrefabs:
-  - {fileID: 3412916494451247133, guid: 7c4d498aefe816f468cbb6fe6e851650, type: 3}
-  - {fileID: 3343732045268376516, guid: 561a6a925fae65094874637a778960a5, type: 3}
-  - {fileID: 2890689877681927051, guid: 19185330ac9a1c7d996f85390353c0f6, type: 3}
-  - {fileID: 8465248550429191236, guid: dbf180aa393066a708518405efabf6ea, type: 3}
-  - {fileID: 4110608927498424788, guid: 03658c74d94992ab1a014236dae9f4d5, type: 3}
+  - {fileID: 314503030597176834, guid: 778aee7a3f874817a86db54c213a4baa, type: 3}
+  - {fileID: 7815079077862479936, guid: 4749f7d04f60cc0d597fd77111a4721e, type: 3}
+  - {fileID: 2907499500935959625, guid: 65c400dfaa43f6b4f9a1ac4733ad416b, type: 3}
+  - {fileID: 390742846273404447, guid: d40148c4ca01ca8b2b5d5dfa79fe1a40, type: 3}
+  - {fileID: 5023704147877563260, guid: a8e792217328abe188abf0d3b77cb405, type: 3}
   asteroidSpawnDelay: 2
   asteroidCount: 4
 --- !u!4 &548370495
@@ -584,12 +584,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   asteroidPrefabs:
-  - {fileID: 6007307093356730188, guid: 637ec67862f3696f4bf5505c506c0e6c, type: 3}
-  - {fileID: 6783417226435512761, guid: abea9e67bf8a4102da35308907466d47, type: 3}
-  - {fileID: 1354388785900346730, guid: b06e80c9bdc2f0fb3a5e4678247f6a2d, type: 3}
-  - {fileID: 6647399875214346797, guid: 21d8a472f2a25b024b98a6da808965d9, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 20676101761160099, guid: ee401ee8c9d5298e9b79f065b77ac175, type: 3}
+  - {fileID: 7256460750116236988, guid: e5fd4c2088131cf67aa357fca095d077, type: 3}
+  - {fileID: 9088447163452989455, guid: 84f4bdf524a42aba7809f8f6ba035331, type: 3}
+  - {fileID: 5312354236646243884, guid: a831ae8808baf4f7aa84a13a05e10283, type: 3}
+  - {fileID: 7260277893992752504, guid: cc6b02a3f9bd4e426a712d93f19519e4, type: 3}
+  - {fileID: 3118831869861048987, guid: ff5b65fac3ded1cc9b60c343d03a4b7e, type: 3}
   asteroidSpawnDelay: 3
   asteroidCount: 3
 --- !u!4 &644880444
@@ -1645,10 +1645,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   asteroidPrefabs:
-  - {fileID: 6699092618566436961, guid: cafcf15d8dc669589b8de990a3e12534, type: 3}
-  - {fileID: 4810909102507745952, guid: aa6cfd12f0a4729afb0cd49705afdcaf, type: 3}
-  - {fileID: 6733888699080222445, guid: 51ce21d0a5d42b5eb9a65cb6b596d5e1, type: 3}
-  - {fileID: 1858943784538828727, guid: f352bdc1df4f46ecf96391283c02e2a3, type: 3}
+  - {fileID: 4890036487026757785, guid: 05475ac9039b1327081cd5a41f9cd2e9, type: 3}
+  - {fileID: 895691187088645324, guid: 3e02ee249a268134799874a5ab954822, type: 3}
+  - {fileID: 9008538288787008797, guid: 12a2866cb1baf89658ac332feecbb67d, type: 3}
+  - {fileID: 7445963517188706801, guid: bd6dc3f1af9d020e9b89a1eb0a10953f, type: 3}
   asteroidSpawnDelay: 1
   asteroidCount: 5
 --- !u!4 &1093365409
