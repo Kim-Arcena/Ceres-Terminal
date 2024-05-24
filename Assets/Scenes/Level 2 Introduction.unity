@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.4964127, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -183,7 +183,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buffer: 0.5
-  cornerLimit: 1.4
 --- !u!212 &78172996
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -461,7 +460,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buffer: 0.5
-  cornerLimit: 1.4
 --- !u!114 &195891589
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -708,6 +706,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 662390973}
     m_Modifications:
     - target: {fileID: 1574834850886071130, guid: 21d8a472f2a25b024b98a6da808965d9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: fcdc89400b2e34cc990bd5b8ff652c25, type: 3}
+    - target: {fileID: 1574834850886071130, guid: 21d8a472f2a25b024b98a6da808965d9, type: 3}
       propertyPath: m_Color.a
       value: 0.69803923
       objectReference: {fileID: 0}
@@ -871,7 +873,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buffer: 0.5
-  cornerLimit: 1.4
 --- !u!212 &656105948
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1018,7 +1019,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buffer: 0.5
-  cornerLimit: 1.4
 --- !u!114 &671994869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1226,7 +1226,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a86643474b9e975c397b568be145171e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 313e066dea5666e8ea6589d11832964a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1312,7 +1312,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buffer: 0.5
-  cornerLimit: 1.4
 --- !u!212 &1063657450
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1412,7 +1411,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buffer: 0.4
-  cornerLimit: 1.5
 --- !u!114 &1109758393
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1870,6 +1868,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1230893413}
   - component: {fileID: 1230893414}
+  - component: {fileID: 1230893415}
   m_Layer: 0
   m_Name: Stars Small_1
   m_TagString: Untagged
@@ -1886,7 +1885,7 @@ Transform:
   m_GameObject: {fileID: 1230893412}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -6.5942807, y: 0.48239136, z: 1.17894}
+  m_LocalPosition: {x: -6.5942807, y: -16.5, z: 1.2}
   m_LocalScale: {x: 3.75, y: 3.75, z: 3.75}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1944,6 +1943,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1230893415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1230893412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b4abe30cf73657e7a7911408c9c6144, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  increaseRate: 0.07
+  maxAspectRatio: 1.5
 --- !u!1 &1238814574
 GameObject:
   m_ObjectHideFlags: 0
@@ -2058,7 +2071,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buffer: 0.5
-  cornerLimit: 1.4
 --- !u!114 &1263527539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2490,6 +2502,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 662390973}
     m_Modifications:
     - target: {fileID: 4614258012936753582, guid: 36d65a8793359d685bc0cf8e6d866882, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 08e66b746bb4c4befa7588c133628e7c, type: 3}
+    - target: {fileID: 4614258012936753582, guid: 36d65a8793359d685bc0cf8e6d866882, type: 3}
       propertyPath: m_Color.a
       value: 0.6784314
       objectReference: {fileID: 0}
@@ -2588,7 +2604,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buffer: 0.5
-  cornerLimit: 1.4
 --- !u!114 &1534265835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2762,11 +2777,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 743791318603618998, guid: 119d55180a44dde00b52a90097e8a3dc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.4823914
+      value: 5.5
       objectReference: {fileID: 0}
     - target: {fileID: 743791318603618998, guid: 119d55180a44dde00b52a90097e8a3dc, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6.82106
+      value: -22.3
       objectReference: {fileID: 0}
     - target: {fileID: 743791318603618998, guid: 119d55180a44dde00b52a90097e8a3dc, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2800,6 +2815,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3006016947762631548, guid: 119d55180a44dde00b52a90097e8a3dc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d18af7222ce111328a7238c413501d5e, type: 3}
     - target: {fileID: 3006016947762631548, guid: 119d55180a44dde00b52a90097e8a3dc, type: 3}
       propertyPath: m_Color.a
       value: 0.42745098
@@ -2912,6 +2931,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4103273749144326376, guid: b06e80c9bdc2f0fb3a5e4678247f6a2d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ddf16f0911933734e9498c526fb4df56, type: 3}
     - target: {fileID: 4103273749144326376, guid: b06e80c9bdc2f0fb3a5e4678247f6a2d, type: 3}
       propertyPath: m_Color.a
       value: 0.70980394
