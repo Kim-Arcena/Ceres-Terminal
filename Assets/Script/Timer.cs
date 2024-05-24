@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using DentedPixel;
 
 public class Timer : MonoBehaviour
 {
@@ -14,11 +15,13 @@ public class Timer : MonoBehaviour
     // public GameObject nextLevelTrigger;
     [SerializeField] public bool setTrigger = false;
     [SerializeField] private string scenename;
+    [SerializeField] GameObject bar;
     
     void Start()
     {
         currentTime = startTime;
         playerManager = FindObjectOfType<PlayerMovement>();
+        AnimateBar();
     }
 
     void Update()
@@ -45,6 +48,13 @@ public class Timer : MonoBehaviour
     void NextLevel()
     {
         SceneManager.LoadScene(scenename);
+    }
+
+    void AnimateBar()
+    {
+        LeanTween.delayedCall(5f, () => {
+            LeanTween.scaleX(bar, 1, startTime);
+        });
     }
 
     // void SetNextLevelTrigger()
