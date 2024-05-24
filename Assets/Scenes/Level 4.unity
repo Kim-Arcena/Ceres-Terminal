@@ -414,7 +414,7 @@ MonoBehaviour:
   - {fileID: 390742846273404447, guid: d40148c4ca01ca8b2b5d5dfa79fe1a40, type: 3}
   - {fileID: 5023704147877563260, guid: a8e792217328abe188abf0d3b77cb405, type: 3}
   asteroidSpawnDelay: 2
-  asteroidCount: 4
+  asteroidCount: 60
 --- !u!4 &548370495
 Transform:
   m_ObjectHideFlags: 0
@@ -591,7 +591,7 @@ MonoBehaviour:
   - {fileID: 7260277893992752504, guid: cc6b02a3f9bd4e426a712d93f19519e4, type: 3}
   - {fileID: 3118831869861048987, guid: ff5b65fac3ded1cc9b60c343d03a4b7e, type: 3}
   asteroidSpawnDelay: 3
-  asteroidCount: 3
+  asteroidCount: 60
 --- !u!4 &644880444
 Transform:
   m_ObjectHideFlags: 0
@@ -1649,8 +1649,8 @@ MonoBehaviour:
   - {fileID: 895691187088645324, guid: 3e02ee249a268134799874a5ab954822, type: 3}
   - {fileID: 9008538288787008797, guid: 12a2866cb1baf89658ac332feecbb67d, type: 3}
   - {fileID: 7445963517188706801, guid: bd6dc3f1af9d020e9b89a1eb0a10953f, type: 3}
-  asteroidSpawnDelay: 1
-  asteroidCount: 5
+  asteroidSpawnDelay: 2
+  asteroidCount: 60
 --- !u!4 &1093365409
 Transform:
   m_ObjectHideFlags: 0
@@ -2026,7 +2026,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3347900065107889918, guid: 045370ad19c21a840a6152f65c7bf33a, type: 3}
       propertyPath: scenename
-      value: Level 5
+      value: Main Screen
+      objectReference: {fileID: 0}
+    - target: {fileID: 3347900065107889918, guid: 045370ad19c21a840a6152f65c7bf33a, type: 3}
+      propertyPath: startTime
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 7889488003117083922, guid: 045370ad19c21a840a6152f65c7bf33a, type: 3}
       propertyPath: m_Name

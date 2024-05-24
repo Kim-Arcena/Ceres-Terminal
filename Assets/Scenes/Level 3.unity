@@ -1370,8 +1370,8 @@ MonoBehaviour:
   - {fileID: 7946888521741496869, guid: e916097d25f057053b4415bd840f6af3, type: 3}
   - {fileID: 1464284876872903422, guid: 2e1d6f8e67b7d450e813a403b4f48759, type: 3}
   - {fileID: 8756353409040489837, guid: 6458417ac97132f34b5c57ad70dd7e0c, type: 3}
-  asteroidSpawnDelay: 1
-  asteroidCount: 4
+  asteroidSpawnDelay: 2.5
+  asteroidCount: 60
 --- !u!4 &889447799
 Transform:
   m_ObjectHideFlags: 0
@@ -1623,7 +1623,7 @@ MonoBehaviour:
   - {fileID: 2163919982910322540, guid: e7c6898f022fb684e972c98e11eafd52, type: 3}
   - {fileID: 338539314525481607, guid: 1b0340c309368138a9bd2b93c2c7cbf5, type: 3}
   asteroidSpawnDelay: 2
-  asteroidCount: 4
+  asteroidCount: 60
 --- !u!4 &957818205
 Transform:
   m_ObjectHideFlags: 0
@@ -1917,8 +1917,8 @@ MonoBehaviour:
   - {fileID: 4341858809674569594, guid: f3b410f79df216a8588a23a7897a62bf, type: 3}
   - {fileID: 1695732449111908306, guid: 21cdfb8325510e7a68d27ea47af5ab3c, type: 3}
   - {fileID: 5546489815578952, guid: f7898ffde01ef3907bef1a861d66e19a, type: 3}
-  asteroidSpawnDelay: 3
-  asteroidCount: 3
+  asteroidSpawnDelay: 4
+  asteroidCount: 60
 --- !u!4 &1386024095
 Transform:
   m_ObjectHideFlags: 0

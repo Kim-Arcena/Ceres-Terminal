@@ -26,11 +26,11 @@ public class Asteroids : MonoBehaviour
         
         float spawnSpeed = 0f;
         if (asteroidName[0] == 'l') {
-            spawnSpeed = -7.5f * 5f + 11f;
+            spawnSpeed = -7f * 4f + 7f;
         } else if (asteroidName[0] == 'm') {
-            spawnSpeed = -7.5f * 4f + 9f;
+            spawnSpeed = -7f * 3f + 4f;
         } else if (asteroidName[0] == 's') {
-            spawnSpeed = -7.5f * 3f + 7f;
+            spawnSpeed = -7f * 2f + 3f;
         }
         rb.AddForce(direction * spawnSpeed, ForceMode.Impulse);
 
