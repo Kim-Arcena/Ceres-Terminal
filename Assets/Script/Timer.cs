@@ -52,7 +52,7 @@ public class Timer : MonoBehaviour
 
     void AnimateBar()
     {
-        LeanTween.delayedCall(5f, () => {
+        LeanTween.delayedCall(1f, () => {
             LeanTween.scaleX(bar, 1, startTime);
         });
     }
