@@ -14,7 +14,7 @@ public class FogSpawner : MonoBehaviour
 
     private void Start()
     {
-        Invoke("StartSpawning", 15f);
+        Invoke("StartSpawning", 10f);
     }
 
     void StartSpawning(){

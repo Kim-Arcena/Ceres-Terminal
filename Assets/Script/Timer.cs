@@ -16,6 +16,8 @@ public class Timer : MonoBehaviour
     [SerializeField] public bool setTrigger = false;
     [SerializeField] private string scenename;
     [SerializeField] GameObject bar;
+
+    [SerializeField] GameObject fadeOut;
     
     void Start()
     {
@@ -35,7 +37,13 @@ public class Timer : MonoBehaviour
                 if(setTrigger == false)
                 {
                     // SetNextLevelTrigger();
-                    Invoke("NextLevel", 5f);
+                    if(scenename == "Menu Screen"){
+                        fadeOut.SetActive(true);
+                    }
+                    else{
+                        Invoke("NextLevel", 5f);
+                    }
+
                 }
             }
         }
