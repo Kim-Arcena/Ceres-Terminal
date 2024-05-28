@@ -33,7 +33,7 @@ public class EndScene : MonoBehaviour
         creditScroll.SetActive(true);
         question.SetActive(false);
         buttons.SetActive(false);
-        Invoke("EndGame", 12f);
+        Invoke("EndGame", 20f);
     }
 
     void EndGame(){
