@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2533779716627481846}
   - component: {fileID: 1519875922273315033}
   - component: {fileID: 3195387226825860809}
-  - component: {fileID: 1621781231491008646}
+  - component: {fileID: -4876368441546156463}
   m_Layer: 0
   m_Name: l_3
   m_TagString: Obstacle
@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buffer: 0.1
---- !u!114 &1621781231491008646
+--- !u!114 &-4876368441546156463
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -163,17 +163,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   size: 0
   mediumAsteroids:
-  - {fileID: 2608272668390483595, guid: deb0af2ba6cf9dd03b395ce17696cd35, type: 3}
-  - {fileID: 830871885445543177, guid: 2af0973f002e8e7f8b9f4b330a17907f, type: 3}
-  - {fileID: 3937032504934240407, guid: 8302db39ea37296c297da86c822ef763, type: 3}
-  - {fileID: 2499182132943527286, guid: 438634f021fca4dffa3dea3254d57770, type: 3}
-  - {fileID: 2608272668390483595, guid: deb0af2ba6cf9dd03b395ce17696cd35, type: 3}
+  - {fileID: 5129677515065235462, guid: deb0af2ba6cf9dd03b395ce17696cd35, type: 3}
+  - {fileID: 3102975815426797130, guid: 2af0973f002e8e7f8b9f4b330a17907f, type: 3}
+  - {fileID: 3348817145229947777, guid: 8302db39ea37296c297da86c822ef763, type: 3}
+  - {fileID: 2889259437137623332, guid: 438634f021fca4dffa3dea3254d57770, type: 3}
   smallAsteroids:
-  - {fileID: 5107783856320590222, guid: 8afd54b2fefa804a0b46e25d8ff2d0fd, type: 3}
-  - {fileID: 5368027774027112792, guid: 668a77d923e75d7799ec31deb8c5c89f, type: 3}
-  - {fileID: 2053557910559558977, guid: 1f4e48a9f57beed559952aa1db605b9d, type: 3}
-  - {fileID: 8005820436967139015, guid: 18c7a7f40560e3035aa350e29f4680a8, type: 3}
-  explosion: {fileID: 7423839949581511795, guid: 0f6193e794464274b9d608fe3253f0c9, type: 3}
-  destroySound: {fileID: 8300000, guid: 0403f76fc412b054dbc02336703e95a6, type: 3}
-  hitSound: {fileID: 8300000, guid: 4b8e80d6ac911044f8b7c7b9c09dcab3, type: 3}
+  - {fileID: -6786885074167423786, guid: 8afd54b2fefa804a0b46e25d8ff2d0fd, type: 3}
+  - {fileID: -7942434448019557071, guid: 668a77d923e75d7799ec31deb8c5c89f, type: 3}
+  - {fileID: -3816889297654933022, guid: 1f4e48a9f57beed559952aa1db605b9d, type: 3}
+  - {fileID: -3264478939677736403, guid: 18c7a7f40560e3035aa350e29f4680a8, type: 3}
+  explosion: {fileID: 0}
+  destroySound: {fileID: 8300000, guid: 4b8e80d6ac911044f8b7c7b9c09dcab3, type: 3}
+  hitSound: {fileID: 8300000, guid: 0403f76fc412b054dbc02336703e95a6, type: 3}
   gameManager: {fileID: 0}

@@ -11,6 +11,7 @@ TagManager:
   - HugeAsteroid
   - BrownExplosion
   - OneShotAudio
+  - OneType
   layers:
   - Default
   - TransparentFX
