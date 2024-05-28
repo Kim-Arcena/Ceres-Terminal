@@ -42,7 +42,7 @@ public class Timer : MonoBehaviour
                         Invoke("NextLevel", 6f);
                     }
                     else{
-                        Invoke("NextLevel", 5f);
+                        Invoke("NextLevel", 3f);
                     }
                 }
             }

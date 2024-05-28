@@ -1352,7 +1352,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.627451}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2682,7 +2682,7 @@ MonoBehaviour:
   - {fileID: 2890689877681927051, guid: 19185330ac9a1c7d996f85390353c0f6, type: 3}
   - {fileID: 8465248550429191236, guid: dbf180aa393066a708518405efabf6ea, type: 3}
   - {fileID: 4110608927498424788, guid: 03658c74d94992ab1a014236dae9f4d5, type: 3}
-  asteroidSpawnDelay: 5
+  asteroidSpawnDelay: 4
   asteroidCount: 60
 --- !u!4 &1873799780
 Transform:
@@ -3395,7 +3395,7 @@ PrefabInstance:
       objectReference: {fileID: 264967338}
     - target: {fileID: 3347900065107889918, guid: 045370ad19c21a840a6152f65c7bf33a, type: 3}
       propertyPath: SceneName
-      value: Level 2
+      value: Level 2 Introduction
       objectReference: {fileID: 0}
     - target: {fileID: 3347900065107889918, guid: 045370ad19c21a840a6152f65c7bf33a, type: 3}
       propertyPath: scenename
