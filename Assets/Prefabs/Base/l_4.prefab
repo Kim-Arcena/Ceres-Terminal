@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 8169867494683196176}
   - component: {fileID: 4184268774633922103}
-  - component: {fileID: 8993702979141495556}
   - component: {fileID: 4696168565358455705}
   - component: {fileID: 4273616944914461278}
   - component: {fileID: 2564853905663443392}
+  - component: {fileID: 8866888648436174978}
   m_Layer: 0
   m_Name: l_4
   m_TagString: Obstacle
@@ -88,34 +88,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8993702979141495556
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5342757700874534025}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11a5e92d87e91b14f8909e4449e9ba70, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  size: 0
-  mediumAsteroids:
-  - {fileID: 2608272668390483595, guid: deb0af2ba6cf9dd03b395ce17696cd35, type: 3}
-  - {fileID: 830871885445543177, guid: 2af0973f002e8e7f8b9f4b330a17907f, type: 3}
-  - {fileID: 3937032504934240407, guid: 8302db39ea37296c297da86c822ef763, type: 3}
-  - {fileID: 2499182132943527286, guid: 438634f021fca4dffa3dea3254d57770, type: 3}
-  - {fileID: 2608272668390483595, guid: deb0af2ba6cf9dd03b395ce17696cd35, type: 3}
-  smallAsteroids:
-  - {fileID: 5107783856320590222, guid: 8afd54b2fefa804a0b46e25d8ff2d0fd, type: 3}
-  - {fileID: 5368027774027112792, guid: 668a77d923e75d7799ec31deb8c5c89f, type: 3}
-  - {fileID: 2053557910559558977, guid: 1f4e48a9f57beed559952aa1db605b9d, type: 3}
-  - {fileID: 8005820436967139015, guid: 18c7a7f40560e3035aa350e29f4680a8, type: 3}
-  explosion: {fileID: 7423839949581511795, guid: 0f6193e794464274b9d608fe3253f0c9, type: 3}
-  destroySound: {fileID: 8300000, guid: 0403f76fc412b054dbc02336703e95a6, type: 3}
-  hitSound: {fileID: 8300000, guid: 4b8e80d6ac911044f8b7c7b9c09dcab3, type: 3}
-  gameManager: {fileID: 0}
 --- !u!114 &4696168565358455705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,3 +149,30 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 52
   m_CollisionDetection: 0
+--- !u!114 &8866888648436174978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5342757700874534025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11a5e92d87e91b14f8909e4449e9ba70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  size: 0
+  mediumAsteroids:
+  - {fileID: 5129677515065235462, guid: deb0af2ba6cf9dd03b395ce17696cd35, type: 3}
+  - {fileID: 3102975815426797130, guid: 2af0973f002e8e7f8b9f4b330a17907f, type: 3}
+  - {fileID: 3348817145229947777, guid: 8302db39ea37296c297da86c822ef763, type: 3}
+  - {fileID: 2889259437137623332, guid: 438634f021fca4dffa3dea3254d57770, type: 3}
+  smallAsteroids:
+  - {fileID: -6786885074167423786, guid: 8afd54b2fefa804a0b46e25d8ff2d0fd, type: 3}
+  - {fileID: -7942434448019557071, guid: 668a77d923e75d7799ec31deb8c5c89f, type: 3}
+  - {fileID: -3816889297654933022, guid: 1f4e48a9f57beed559952aa1db605b9d, type: 3}
+  - {fileID: -3264478939677736403, guid: 18c7a7f40560e3035aa350e29f4680a8, type: 3}
+  explosion: {fileID: 0}
+  destroySound: {fileID: 8300000, guid: 4b8e80d6ac911044f8b7c7b9c09dcab3, type: 3}
+  hitSound: {fileID: 8300000, guid: 0403f76fc412b054dbc02336703e95a6, type: 3}
+  gameManager: {fileID: 0}

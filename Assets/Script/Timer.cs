@@ -14,7 +14,7 @@ public class Timer : MonoBehaviour
     private PlayerMovement playerManager;
     // public GameObject nextLevelTrigger;
     [SerializeField] public bool setTrigger = false;
-    [SerializeField] private string scenename;
+    [SerializeField] private string SceneName;
     [SerializeField] GameObject bar;
 
     [SerializeField] GameObject fadeOut;
@@ -37,13 +37,10 @@ public class Timer : MonoBehaviour
                 if(setTrigger == false)
                 {
                     // SetNextLevelTrigger();
-                    if(scenename == "Menu Screen"){
+                    if(SceneName == "End Menu"){
                         fadeOut.SetActive(true);
                     }
-                    else{
-                        Invoke("NextLevel", 5f);
-                    }
-
+                    Invoke("NextLevel", 5f);
                 }
             }
         }
@@ -55,7 +52,7 @@ public class Timer : MonoBehaviour
 
     void NextLevel()
     {
-        SceneManager.LoadScene(scenename);
+        SceneManager.LoadScene(SceneName);
     }
 
     void AnimateBar()
