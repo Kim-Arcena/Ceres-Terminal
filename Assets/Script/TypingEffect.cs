@@ -34,8 +34,10 @@ public class TypingEffect : MonoBehaviour
             yield return new WaitForSeconds(textSpeed);
         }
 
-        yield return new WaitForSeconds(1f);
-        StartCoroutine(UntypeLine());
+        if(gameObject.tag != "OneType"){
+            yield return new WaitForSeconds(1f);
+            StartCoroutine(UntypeLine());
+        }
     }
 
     IEnumerator UntypeLine()
