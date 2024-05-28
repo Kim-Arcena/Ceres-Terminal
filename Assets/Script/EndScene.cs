@@ -12,7 +12,7 @@ public class EndScene : MonoBehaviour
     
     private void Start()
     {
-        Invoke("showButton", 2.5f);
+        Invoke("showButton", 3.25f);
     }
 
     void showButton(){

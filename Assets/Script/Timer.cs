@@ -39,8 +39,11 @@ public class Timer : MonoBehaviour
                     // SetNextLevelTrigger();
                     if(SceneName == "End Menu"){
                         fadeOut.SetActive(true);
+                        Invoke("NextLevel", 6f);
                     }
-                    Invoke("NextLevel", 5f);
+                    else{
+                        Invoke("NextLevel", 5f);
+                    }
                 }
             }
         }
