@@ -7,14 +7,20 @@ public class EndScene : MonoBehaviour
 {
     [SerializeField] GameObject creditScroll;
 
+    [SerializeField] GameObject finalScore;
     [SerializeField] GameObject question;
     [SerializeField] GameObject buttons;
     
     private void Start()
     {
-        Invoke("showButton", 3.25f);
+        Invoke("showQuestion", 10f);
     }
 
+    void showQuestion(){
+        finalScore.SetActive(false);
+        question.SetActive(true);
+        Invoke("showButton", 3.25f);
+    }
     void showButton(){
         buttons.SetActive(true);
     }
