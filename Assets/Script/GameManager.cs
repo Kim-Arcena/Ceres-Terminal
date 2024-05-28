@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
+
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private Asteroids[] asteroidPrefabs;

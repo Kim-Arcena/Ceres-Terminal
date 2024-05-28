@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class DeathManager : MonoBehaviour
 {
     private PlayerMovement playerManager;
+    private Score scoreManager;
     void Start()
     {
         playerManager = FindObjectOfType<PlayerMovement>();
@@ -14,7 +15,7 @@ public class DeathManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("playerManager.isAlive " + playerManager.isAlive.ToString());
+        //Debug.Log("playerManager.isAlive " + playerManager.isAlive.ToString());
         if(playerManager.isAlive == false)
         {
             Debug.Log("Invoking reset scene");
@@ -24,6 +25,7 @@ public class DeathManager : MonoBehaviour
 
     public void ResetScene()
     {
+        //scoreManager.ResetScoreToLevelStart();
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex);
     }

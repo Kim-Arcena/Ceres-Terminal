@@ -162,6 +162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   size: 0
+  points: 50
   mediumAsteroids:
   - {fileID: 3412916494451247133, guid: 7c4d498aefe816f468cbb6fe6e851650, type: 3}
   - {fileID: 3343732045268376516, guid: 561a6a925fae65094874637a778960a5, type: 3}

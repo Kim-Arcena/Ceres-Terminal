@@ -5,15 +5,22 @@ using UnityEngine;
 public class Asteroids : MonoBehaviour
 {
     [SerializeField] private float size;
+    [SerializeField] private int largeAsteroidPoints = 20;  // Points for large asteroids
+    [SerializeField] private int mediumAsteroidPoints = 30;  // Points for medium asteroids
+    [SerializeField] private int smallAsteroidPoints = 50;     
     [SerializeField] private Asteroids[] mediumAsteroids;
     [SerializeField] private Asteroids[] smallAsteroids;
     [SerializeField] private ParticleSystem explosion;
     [SerializeField] private AudioClip destroySound;
     [SerializeField] private AudioClip hitSound;
 
+
     public GameManager gameManager;
+    public Score score;
     private int hits = 0;
     private string asteroidName;
+
+    private int points;
 
     void Start()
     {
@@ -27,11 +34,15 @@ public class Asteroids : MonoBehaviour
         float spawnSpeed = 0f;
         if (asteroidName[0] == 'l') {
             spawnSpeed = -7.5f * 5f + 11f;
+            points = largeAsteroidPoints;
         } else if (asteroidName[0] == 'm') {
             spawnSpeed = -7.5f * 4f + 9f;
+            points = mediumAsteroidPoints;
         } else if (asteroidName[0] == 's') {
             spawnSpeed = -7.5f * 3f + 7f;
+            points = smallAsteroidPoints;
         }
+
         rb.AddForce(direction * spawnSpeed, ForceMode.Impulse);
 
         if (gameManager != null) {
@@ -57,10 +68,22 @@ public class Asteroids : MonoBehaviour
     }
 
     private void HandleDestruction() {
+        Debug.Log("Asteroid destroyed, updating score by: " + points);
         if (gameManager != null) {
             gameManager.asteroidCount--;
+            if (score != null)
+            {
+                score.UpdateScore(points);
+            }
+            else
+            {
+                Debug.LogError("Score manager is not assigned!");
+            }
         }
-
+        else
+        {
+            Debug.LogError("GameManager is not assigned!");
+        }
         StartCoroutine(DestroyAsteroid());
     }
 
