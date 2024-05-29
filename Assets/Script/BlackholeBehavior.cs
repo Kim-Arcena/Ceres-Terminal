@@ -22,15 +22,33 @@ public class BlackholeBehavior : MonoBehaviour
         transform.Rotate(Vector3.forward, scaledRotation * Time.deltaTime);
     }
 
-    private void OnCollisionEnter(Collision collision)
+private void OnCollisionEnter(Collision collision)
+{
+    if (collision.gameObject.CompareTag("Player"))
     {
-        if (collision.gameObject.CompareTag("Player"))
+        // Disable the ShipMovement script
+        PlayerMovement shipMovement = collision.gameObject.GetComponent<PlayerMovement>();
+        if (shipMovement != null)
         {
-            Transform parentTransform = transform.parent;
-            float delaySeconds = (parentTransform.localScale.x * -0.6f) + 3.9f;
-            print(parentTransform.localScale.x);
-            print(delaySeconds);
-            Destroy(collision.gameObject, delaySeconds);
+            shipMovement.enabled = false;
         }
+
+        Transform parentTransform = transform.parent;
+        float delaySeconds = (parentTransform.localScale.x * -0.6f) + 1f;
+        print(parentTransform.localScale.x);
+        print(delaySeconds);
+        Destroy(collision.gameObject);
+        shipMovement.isAlive = false;
+    }
+    else if (collision.gameObject.CompareTag("Obstacle")){
+        Destroy(collision.gameObject);
     }
 }
+private void OnTriggerEnter(Collider other)
+{
+    if (other.gameObject.CompareTag("Bullet"))
+    {
+        Destroy(other.gameObject);
+    }
+
+}}

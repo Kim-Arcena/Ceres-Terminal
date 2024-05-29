@@ -15,6 +15,9 @@ public class BotBehaviour : MonoBehaviour
     [SerializeField] private float fireTimer = 1.0f;
     [SerializeField] private AudioClip shootSound;
     [SerializeField] private AudioClip destroySound;
+
+    [SerializeField] private ParticleSystem explosion;
+
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
@@ -49,6 +52,7 @@ public class BotBehaviour : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Bullet"))
         {
+            Instantiate(explosion, transform.position, transform.rotation);
             AudioSource.PlayClipAtPoint(destroySound, transform.position);
             Destroy(collision.gameObject);
             Destroy(gameObject);

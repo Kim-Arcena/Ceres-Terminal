@@ -82,6 +82,7 @@ MonoBehaviour:
   fireTimer: 0
   shootSound: {fileID: 8300000, guid: 96f566091c8bf7d41baba5425f1d7afd, type: 3}
   destroySound: {fileID: 8300000, guid: b7bbc093fec49a24bbc7f125785e066f, type: 3}
+  explosion: {fileID: 7423839949581511795, guid: ade9a9550a97a0e44a4655e0899824f3, type: 3}
 --- !u!65 &2662792551045467239
 BoxCollider:
   m_ObjectHideFlags: 0
