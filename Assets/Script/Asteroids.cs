@@ -61,6 +61,20 @@ public class Asteroids : MonoBehaviour
             gameManager.asteroidCount--;
         }
 
+         // Add score based on asteroid size
+        if (asteroidName[0] == 'l')
+        {
+            ScoreManager.Instance.AddScore(10);
+        }
+        else if (asteroidName[0] == 'm')
+        {
+            ScoreManager.Instance.AddScore(20);
+        }
+        else if (asteroidName[0] == 's')
+        {
+            ScoreManager.Instance.AddScore(30);
+        }
+
         StartCoroutine(DestroyAsteroid());
     }
 
