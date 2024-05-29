@@ -37,6 +37,7 @@ public class Timer : MonoBehaviour
                 {
                     // SetNextLevelTrigger();
                     if(SceneName == "End Menu"){
+                        ScoreManager.Instance.SetCurrentLevelStartScore();
                         fadeOut.SetActive(true);
                         Invoke("NextLevel", 6.5f);
                     }

@@ -26,6 +26,11 @@ public class TypingEffect : MonoBehaviour
         StartCoroutine(TypeLine());
     }
 
+    public void setFinalScore(string finalScore){
+        Debug.Log(finalScore);
+        this.lines[0] = finalScore;
+    }
+
     IEnumerator TypeLine()
     {
         foreach (char c in lines[index].ToCharArray())

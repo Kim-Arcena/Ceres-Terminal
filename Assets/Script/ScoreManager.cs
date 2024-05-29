@@ -197,6 +197,8 @@ public class ScoreManager : MonoBehaviour
     private int cumulativeScore = 0;
     private int currentLevelStartScore = 0;
     private int score = 0;
+    [SerializeField] private string sceneName;
+	private TypingEffect typingEffect;
 
     private void Awake()
     {
@@ -216,7 +218,8 @@ public class ScoreManager : MonoBehaviour
     private void Start()
     {
         UpdateScoreText();
-    }
+        typingEffect = GetComponent<TypingEffect>();
+	}
 
     // This method will be called every time a new scene is loaded
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
@@ -249,10 +252,13 @@ public class ScoreManager : MonoBehaviour
 
     private void UpdateScoreText()
     {
-        if (scoreText != null)
+        if (scoreText != null && sceneName != "End Menu")
         {
             scoreText.text = "Score: " + score;
         }
+		else{
+			typingEffect.setFinalScore("Final Score: " + score.ToString());
+		}
     }
 
     private void OnDestroy()
