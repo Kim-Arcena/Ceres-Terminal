@@ -65,7 +65,7 @@ public class BlackholeManager : MonoBehaviour
             BoxCollider collider = newBlackHole.transform.GetChild(0).GetComponent<BoxCollider>();
 
             // Start scaling coroutine
-            StartCoroutine(ScaleUpAsteroid(newBlackHole.transform, collider));
+            StartCoroutine(ScaleUpBlackHole(newBlackHole.transform, collider));
 
             currentBlackholeCount++;
         }
@@ -88,7 +88,7 @@ public class BlackholeManager : MonoBehaviour
     }
 
 
-    IEnumerator ScaleUpAsteroid(Transform asteroidTransform, BoxCollider collider)
+    IEnumerator ScaleUpBlackHole(Transform asteroidTransform, BoxCollider collider)
     {
         collider.isTrigger = true;
         float timer = 0f;
@@ -105,6 +105,12 @@ public class BlackholeManager : MonoBehaviour
             timer += Time.deltaTime;
 
             float t = timer / 2f;
+            if (t > 1f)
+            {
+                collider.isTrigger = false;
+            }
+
+            
 
             // Interpolate scale from initial to target scale
             asteroidTransform.localScale = Vector3.Lerp(initialScale, targetScale, t);
@@ -114,7 +120,6 @@ public class BlackholeManager : MonoBehaviour
 
         // Ensure the asteroid has reached its final scale
         asteroidTransform.localScale = targetScale;
-        collider.isTrigger = false;
         yield return new WaitForSeconds(10f);
         // Scale down the asteroid over 2 seconds
         timer = 0f;
