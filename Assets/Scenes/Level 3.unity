@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.4964127, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1511,9 +1511,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackholePrefab: {fileID: 5376991901856790723, guid: 43427a0f9f1996f4e92936b240fa9497, type: 3}
   spawnPos: {x: 0, y: 0, z: 0}
-  startDelay: 8
-  minRepeatRate: 5
-  maxRepeatRate: 8
+  startDelay: 5
+  minRepeatRate: 4
+  maxRepeatRate: 6
   xPosBoundary: 5
   zPosBoundary: 5
   xRange: 15
@@ -1561,7 +1561,7 @@ MonoBehaviour:
   - {fileID: 7946888521741496869, guid: e916097d25f057053b4415bd840f6af3, type: 3}
   - {fileID: 1464284876872903422, guid: 2e1d6f8e67b7d450e813a403b4f48759, type: 3}
   - {fileID: 8756353409040489837, guid: 6458417ac97132f34b5c57ad70dd7e0c, type: 3}
-  asteroidSpawnDelay: 4
+  asteroidSpawnDelay: 1
   asteroidCount: 60
 --- !u!4 &889447799
 Transform:
@@ -1888,7 +1888,7 @@ MonoBehaviour:
   - {fileID: 6180845315407434802, guid: 286f71f8c56f3a92aa47bc6fc93af647, type: 3}
   - {fileID: 2163919982910322540, guid: e7c6898f022fb684e972c98e11eafd52, type: 3}
   - {fileID: 338539314525481607, guid: 1b0340c309368138a9bd2b93c2c7cbf5, type: 3}
-  asteroidSpawnDelay: 5
+  asteroidSpawnDelay: 2
   asteroidCount: 60
 --- !u!4 &957818205
 Transform:
@@ -2285,7 +2285,7 @@ MonoBehaviour:
   - {fileID: 4341858809674569594, guid: f3b410f79df216a8588a23a7897a62bf, type: 3}
   - {fileID: 1695732449111908306, guid: 21cdfb8325510e7a68d27ea47af5ab3c, type: 3}
   - {fileID: 5546489815578952, guid: f7898ffde01ef3907bef1a861d66e19a, type: 3}
-  asteroidSpawnDelay: 7
+  asteroidSpawnDelay: 3
   asteroidCount: 60
 --- !u!4 &1386024095
 Transform:
