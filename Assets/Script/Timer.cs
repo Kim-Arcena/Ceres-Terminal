@@ -41,6 +41,7 @@ public class Timer : MonoBehaviour
                         Invoke("NextLevel", 6.5f);
                     }
                     else{
+                        ScoreManager.Instance.SetCurrentLevelStartScore();
                         fadeOut.SetActive(true);
                         Invoke("NextLevel", 5f);
                     }
