@@ -8,7 +8,7 @@ public class NextScene : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Invoke("handleOnLoadScene", 5.0f);
+        Invoke("handleOnLoadScene", 3.0f);
     }
 
     // Update is called once per frame

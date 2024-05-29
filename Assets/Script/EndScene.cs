@@ -13,7 +13,7 @@ public class EndScene : MonoBehaviour
     
     private void Start()
     {
-        Invoke("showQuestion", 10f);
+        Invoke("showQuestion", 8f);
     }
 
     void showQuestion(){

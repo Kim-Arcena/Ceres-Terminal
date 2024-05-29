@@ -220,7 +220,7 @@ MonoBehaviour:
   - {fileID: 6647399875214346797, guid: 124275c342e27f5c8a5d5e3e2f744854, type: 3}
   - {fileID: 7235968623697282669, guid: 6e36eb97d64f715d5bd87504845dcd13, type: 3}
   - {fileID: 3283578500178075703, guid: 1832ad7b0414fba4195911c887e1a757, type: 3}
-  asteroidSpawnDelay: 4
+  asteroidSpawnDelay: 6
   asteroidCount: 60
 --- !u!4 &120062426
 Transform:
@@ -872,7 +872,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 86552edc2311f1b3b8d0038400eb9572, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e1f3e14a3cc8c72b6ab91ffbd5915088, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -935,6 +935,10 @@ PrefabInstance:
       propertyPath: bar
       value: 
       objectReference: {fileID: 1036917682}
+    - target: {fileID: 3347900065107889918, guid: 045370ad19c21a840a6152f65c7bf33a, type: 3}
+      propertyPath: SceneName
+      value: Level 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3347900065107889918, guid: 045370ad19c21a840a6152f65c7bf33a, type: 3}
       propertyPath: scenename
       value: Level 3
@@ -1193,7 +1197,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.6955346, y: 0.12740351, z: -0.12740351, w: 0.6955346}
   m_LocalPosition: {x: -38.39428, y: 7, z: 17.17894}
-  m_LocalScale: {x: 1.6000001, y: 1.6000003, z: 1.6000003}
+  m_LocalScale: {x: 1.48, y: 1.48, z: 1.48}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 162868156}
@@ -1265,7 +1269,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: b27a33a8bec4d7d058d61de344159490, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 696efc8fc3eea9b3192ec03fe0bef491, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1348,8 +1352,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 4, y: 0}
-  m_SizeDelta: {x: 192, y: 12}
+  m_AnchoredPosition: {x: 5, y: 0}
+  m_SizeDelta: {x: 390, y: 35}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!1 &1109511109
 GameObject:
@@ -1379,7 +1383,7 @@ Transform:
   m_GameObject: {fileID: 1109511109}
   serializedVersion: 2
   m_LocalRotation: {x: 0.699184, y: 0.10555442, z: -0.10555442, w: 0.699184}
-  m_LocalPosition: {x: 10.00572, y: 7, z: -0.42105985}
+  m_LocalPosition: {x: 18.4, y: 7, z: -3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1452,7 +1456,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 1447c9125bb94132ebf40e13f0cefc84, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 86552edc2311f1b3b8d0038400eb9572, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1682,7 +1686,7 @@ MonoBehaviour:
   - {fileID: 732132926997066406, guid: aa118ccd17801267a8acc45496f0d1a1, type: 3}
   - {fileID: 8613621904776988713, guid: 37f14271ea2fa9853827160539013d5c, type: 3}
   - {fileID: 6583630935384610565, guid: c0c1a09f4a6e0e43786cfa29d16b564d, type: 3}
-  asteroidSpawnDelay: 3
+  asteroidSpawnDelay: 5
   asteroidCount: 60
 --- !u!4 &1370108572
 Transform:
@@ -1821,7 +1825,7 @@ Transform:
   m_GameObject: {fileID: 1429007182}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 11.90572, y: 7, z: -20.92106}
+  m_LocalPosition: {x: 27.4, y: 7, z: -20.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1894,7 +1898,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 7e5433e9313b4327eadcab6ecad5bc08, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1447c9125bb94132ebf40e13f0cefc84, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2459,13 +2463,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1651099849}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 36.20572, y: 2.4, z: 16.6}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalRotation: {x: 0.6502667, y: 0.2777647, z: -0.2777647, w: 0.6502667}
+  m_LocalPosition: {x: 20.1, y: -10, z: 21.4}
+  m_LocalScale: {x: 1.61, y: 1.61, z: 1.61}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 162868156}
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 46.26, z: 0}
 --- !u!114 &1651099851
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2533,7 +2537,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 696efc8fc3eea9b3192ec03fe0bef491, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9b5a45e1c88a9a9f9bb45ac4850f52f0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2819,8 +2823,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 200}
-  m_SizeDelta: {x: 200, y: 20}
+  m_AnchoredPosition: {x: 600, y: 350}
+  m_SizeDelta: {x: 400, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1705188334
 MonoBehaviour:
@@ -2835,7 +2839,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.627451}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

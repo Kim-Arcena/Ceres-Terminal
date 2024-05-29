@@ -172,7 +172,7 @@ MonoBehaviour:
   - {fileID: -7942434448019557071, guid: 668a77d923e75d7799ec31deb8c5c89f, type: 3}
   - {fileID: -3816889297654933022}
   - {fileID: -3264478939677736403, guid: 18c7a7f40560e3035aa350e29f4680a8, type: 3}
-  explosion: {fileID: 0}
+  explosion: {fileID: 7423839949581511795, guid: 0f6193e794464274b9d608fe3253f0c9, type: 3}
   destroySound: {fileID: 8300000, guid: 4b8e80d6ac911044f8b7c7b9c09dcab3, type: 3}
   hitSound: {fileID: 8300000, guid: 0403f76fc412b054dbc02336703e95a6, type: 3}
   gameManager: {fileID: 0}
