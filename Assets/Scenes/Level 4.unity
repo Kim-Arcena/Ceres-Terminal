@@ -467,7 +467,7 @@ MonoBehaviour:
   - {fileID: 1131260612917176214, guid: f140d8508e64cd7bca2c500b4f0fbb2c, type: 3}
   - {fileID: 4512861540920443519, guid: 6f1ee71c9fc6e05199da6a89ecd8b030, type: 3}
   - {fileID: -1500301929921188320, guid: 22cb4f7295aad0fddbfc0c80265783a3, type: 3}
-  asteroidSpawnDelay: 3
+  asteroidSpawnDelay: 4
   asteroidCount: 15
 --- !u!4 &430130770
 Transform:
