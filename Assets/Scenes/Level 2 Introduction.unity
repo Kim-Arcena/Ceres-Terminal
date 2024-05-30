@@ -555,6 +555,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 835393255}
+  sceneName: 
 --- !u!4 &338252587
 Transform:
   m_ObjectHideFlags: 0
@@ -1045,7 +1046,7 @@ Transform:
   m_GameObject: {fileID: 671994866}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -62.89428, y: 5.4823914, z: -24.12106}
+  m_LocalPosition: {x: -68.3, y: 13, z: -24.12106}
   m_LocalScale: {x: 1.51, y: 1.5100001, z: 1.5100001}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -2952,15 +2953,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 743791318603618998, guid: 119d55180a44dde00b52a90097e8a3dc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -49.79428
+      value: -41.5
       objectReference: {fileID: 0}
     - target: {fileID: 743791318603618998, guid: 119d55180a44dde00b52a90097e8a3dc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 743791318603618998, guid: 119d55180a44dde00b52a90097e8a3dc, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -22.3
+      value: -14.4
       objectReference: {fileID: 0}
     - target: {fileID: 743791318603618998, guid: 119d55180a44dde00b52a90097e8a3dc, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3000,7 +3001,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: d18af7222ce111328a7238c413501d5e, type: 3}
     - target: {fileID: 3006016947762631548, guid: 119d55180a44dde00b52a90097e8a3dc, type: 3}
       propertyPath: m_Color.a
-      value: 0.42745098
+      value: 0.6431373
       objectReference: {fileID: 0}
     - target: {fileID: 8360125253671118416, guid: 119d55180a44dde00b52a90097e8a3dc, type: 3}
       propertyPath: m_Name

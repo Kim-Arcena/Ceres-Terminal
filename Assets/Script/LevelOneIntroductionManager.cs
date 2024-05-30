@@ -6,6 +6,7 @@ public class LevelOneIntroductionManager : MonoBehaviour
 {
     [SerializeField] public GameObject shipPlayer;
     [SerializeField] public GameObject FirstDialogue;
+    [SerializeField] public GameObject SecondDialogue;
     [SerializeField] public GameObject asteroid;
     [SerializeField] public Vector3 firstPosition = new Vector3(0f, 50.0f, -1.5f);
     [SerializeField] public float moveSpeed = 2f;
@@ -38,7 +39,7 @@ public class LevelOneIntroductionManager : MonoBehaviour
         if (firstEvent && finishAsteroid == false)
         {
             FirstDialogue.SetActive(true);
-            ThrowAsteroid();
+            Invoke("showSecondDialogue", 5f);
         }
 
         if (finishAsteroid && moveShip)
@@ -52,6 +53,11 @@ public class LevelOneIntroductionManager : MonoBehaviour
         }
     }
 
+    void showSecondDialogue(){
+        SecondDialogue.SetActive(true);
+        ThrowAsteroid();
+    }
+
     void ThrowAsteroid()
     {
         asteroid.SetActive(true);
@@ -60,7 +66,7 @@ public class LevelOneIntroductionManager : MonoBehaviour
         {
             Vector3 throwDirection = Vector3.right;
             asteroidRigidbody.velocity = throwDirection * asteroidSpeed;
-            Invoke("DeactivateAsteroid", 5f);
+            Invoke("DeactivateAsteroid", 6f);
         }
     }
 
