@@ -1621,7 +1621,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shipPlayer: {fileID: 347160627}
-  FirstDialogue: {fileID: 1954521344}
+  FirstDialogue: {fileID: 1267632680}
   asteroid: {fileID: 253600335}
   firstPosition: {x: 0, y: 50, z: -1.5}
   moveSpeed: 2
@@ -1710,6 +1710,7 @@ GameObject:
   - component: {fileID: 1267632683}
   - component: {fileID: 1267632682}
   - component: {fileID: 1267632681}
+  - component: {fileID: 1267632684}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -1764,8 +1765,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1833,6 +1834,23 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1000, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1267632684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1267632680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a62de0d3389f89c0a9bc5ec23ee6d2c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textComponent: {fileID: 1267632681}
+  lines:
+  - fsdfdsf
+  - fsdfsdfdsfs
+  textSpeed: 0
 --- !u!1 &1318661215
 GameObject:
   m_ObjectHideFlags: 0
@@ -2708,7 +2726,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1954521345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2716,14 +2734,16 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1954521344}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a62de0d3389f89c0a9bc5ec23ee6d2c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1267632681}
   lines:
-  - '!!!'
+  - '! ! !'
+  - Is this the end?
+  - Huh?
   textSpeed: 0.09
 --- !u!114 &1954521346
 MonoBehaviour:

@@ -176,4 +176,5 @@ MonoBehaviour:
   explosion: {fileID: 7423839949581511795, guid: f97cd83d3b6cced7f9a7d32d74f99b7c, type: 3}
   destroySound: {fileID: 8300000, guid: 12ad2c6ed571c7449bcd9247cc8210f1, type: 3}
   hitSound: {fileID: 8300000, guid: 4b8e80d6ac911044f8b7c7b9c09dcab3, type: 3}
+  asteroidType: Level 3
   gameManager: {fileID: 0}
