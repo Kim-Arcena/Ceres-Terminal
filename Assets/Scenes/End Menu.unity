@@ -1932,7 +1932,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1980901608}
   lines:
-  - gfdgdf
+  - 
   textSpeed: 0.075
 --- !u!114 &1980901608
 MonoBehaviour:
