@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.4964127, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2147,6 +2147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 1864964527}
+  sceneName: 
 --- !u!4 &1469175118
 Transform:
   m_ObjectHideFlags: 0
@@ -2283,7 +2284,7 @@ MonoBehaviour:
   - {fileID: 1499338287331026344, guid: da731f24fbb4390ebae2eb9ab15dff56, type: 3}
   - {fileID: 5430417228593091187, guid: 7b68e8353095b80fdaafd8c594b845bf, type: 3}
   - {fileID: 3531538345267372583, guid: dd05b32f6b3cbbd78a7511621bc8b1b7, type: 3}
-  asteroidSpawnDelay: 3.5
+  asteroidSpawnDelay: 4
   asteroidCount: 60
 --- !u!4 &1480082978
 Transform:

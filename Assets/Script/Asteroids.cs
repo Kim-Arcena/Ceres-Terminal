@@ -11,6 +11,7 @@ public class Asteroids : MonoBehaviour
     [SerializeField] private AudioClip destroySound;
     [SerializeField] private AudioClip hitSound;
 
+    [SerializeField] private string asteroidType;
     public GameManager gameManager;
     private int hits = 0;
     private string asteroidName;
@@ -51,7 +52,14 @@ public class Asteroids : MonoBehaviour
                 (hits == 2 && asteroidName[0] == 'm') ||
                 (hits == 1 && asteroidName[0] == 's'))
             {
-                HandleDestruction();
+                if (asteroidType != "Base")
+                {
+                    HandleDestruction();
+                }
+                else
+                {
+                    StartCoroutine(DestroyAsteroid());
+                }
             }
         }
     }
@@ -61,7 +69,7 @@ public class Asteroids : MonoBehaviour
             gameManager.asteroidCount--;
         }
 
-         // Add score based on asteroid size
+        // Add score based on asteroid size
         if (asteroidName[0] == 'l')
         {
             ScoreManager.Instance.AddScore(10);

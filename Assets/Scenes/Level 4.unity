@@ -467,7 +467,7 @@ MonoBehaviour:
   - {fileID: 1131260612917176214, guid: f140d8508e64cd7bca2c500b4f0fbb2c, type: 3}
   - {fileID: 4512861540920443519, guid: 6f1ee71c9fc6e05199da6a89ecd8b030, type: 3}
   - {fileID: -1500301929921188320, guid: 22cb4f7295aad0fddbfc0c80265783a3, type: 3}
-  asteroidSpawnDelay: 3
+  asteroidSpawnDelay: 4
   asteroidCount: 15
 --- !u!4 &430130770
 Transform:
@@ -519,7 +519,7 @@ MonoBehaviour:
   - {fileID: 2907499500935959625, guid: 65c400dfaa43f6b4f9a1ac4733ad416b, type: 3}
   - {fileID: 390742846273404447, guid: d40148c4ca01ca8b2b5d5dfa79fe1a40, type: 3}
   - {fileID: 5023704147877563260, guid: a8e792217328abe188abf0d3b77cb405, type: 3}
-  asteroidSpawnDelay: 2.5
+  asteroidSpawnDelay: 3
   asteroidCount: 60
 --- !u!4 &548370495
 Transform:
@@ -700,7 +700,7 @@ MonoBehaviour:
   - {fileID: 5312354236646243884, guid: a831ae8808baf4f7aa84a13a05e10283, type: 3}
   - {fileID: 7260277893992752504, guid: cc6b02a3f9bd4e426a712d93f19519e4, type: 3}
   - {fileID: 3118831869861048987, guid: ff5b65fac3ded1cc9b60c343d03a4b7e, type: 3}
-  asteroidSpawnDelay: 3
+  asteroidSpawnDelay: 4
   asteroidCount: 60
 --- !u!4 &644880444
 Transform:
@@ -1973,7 +1973,7 @@ MonoBehaviour:
   - {fileID: 895691187088645324, guid: 3e02ee249a268134799874a5ab954822, type: 3}
   - {fileID: 9008538288787008797, guid: 12a2866cb1baf89658ac332feecbb67d, type: 3}
   - {fileID: 7445963517188706801, guid: bd6dc3f1af9d020e9b89a1eb0a10953f, type: 3}
-  asteroidSpawnDelay: 3
+  asteroidSpawnDelay: 4
   asteroidCount: 60
 --- !u!4 &1093365409
 Transform:
@@ -2411,7 +2411,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3347900065107889918, guid: 045370ad19c21a840a6152f65c7bf33a, type: 3}
       propertyPath: startTime
-      value: 4
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 7889488003117083922, guid: 045370ad19c21a840a6152f65c7bf33a, type: 3}
       propertyPath: m_Name

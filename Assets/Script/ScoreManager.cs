@@ -48,6 +48,7 @@ public class ScoreManager : MonoBehaviour
             if (typingEffect != null)
             {
                 typingEffect.SetFinalScore("Final Score: " + cumulativeScore);
+                Destroy(gameObject);
             }
         }
         else

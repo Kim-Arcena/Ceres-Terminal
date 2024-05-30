@@ -167,12 +167,14 @@ MonoBehaviour:
   - {fileID: 3102975815426797130, guid: 2af0973f002e8e7f8b9f4b330a17907f, type: 3}
   - {fileID: 3348817145229947777, guid: 8302db39ea37296c297da86c822ef763, type: 3}
   - {fileID: 2889259437137623332, guid: 438634f021fca4dffa3dea3254d57770, type: 3}
+  - {fileID: 2889259437137623332, guid: 438634f021fca4dffa3dea3254d57770, type: 3}
   smallAsteroids:
   - {fileID: -6786885074167423786, guid: 8afd54b2fefa804a0b46e25d8ff2d0fd, type: 3}
   - {fileID: -7942434448019557071, guid: 668a77d923e75d7799ec31deb8c5c89f, type: 3}
   - {fileID: -3816889297654933022, guid: 1f4e48a9f57beed559952aa1db605b9d, type: 3}
   - {fileID: -3264478939677736403}
   explosion: {fileID: 7423839949581511795, guid: 0f6193e794464274b9d608fe3253f0c9, type: 3}
-  destroySound: {fileID: 8300000, guid: 4b8e80d6ac911044f8b7c7b9c09dcab3, type: 3}
-  hitSound: {fileID: 8300000, guid: 0403f76fc412b054dbc02336703e95a6, type: 3}
+  destroySound: {fileID: 8300000, guid: 57f401fd6135c744a8090c56cf17b469, type: 3}
+  hitSound: {fileID: 8300000, guid: 39b1d840f42ba3b43990880682b6b545, type: 3}
+  asteroidType: Base
   gameManager: {fileID: 0}
