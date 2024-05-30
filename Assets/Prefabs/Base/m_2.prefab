@@ -167,6 +167,7 @@ MonoBehaviour:
   - {fileID: 3102975815426797130}
   - {fileID: 3348817145229947777, guid: 8302db39ea37296c297da86c822ef763, type: 3}
   - {fileID: 2889259437137623332, guid: 438634f021fca4dffa3dea3254d57770, type: 3}
+  - {fileID: 2889259437137623332, guid: 438634f021fca4dffa3dea3254d57770, type: 3}
   smallAsteroids:
   - {fileID: -6786885074167423786, guid: 8afd54b2fefa804a0b46e25d8ff2d0fd, type: 3}
   - {fileID: -7942434448019557071, guid: 668a77d923e75d7799ec31deb8c5c89f, type: 3}

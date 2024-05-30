@@ -1693,17 +1693,17 @@ MonoBehaviour:
   blackholePrefab: {fileID: 5376991901856790723, guid: 43427a0f9f1996f4e92936b240fa9497, type: 3}
   spawnPos: {x: 0, y: 0, z: 0}
   startDelay: 5
-  minRepeatRate: 4
-  maxRepeatRate: 6
-  xPosBoundary: 5
-  zPosBoundary: 5
-  xRange: 15
+  minRepeatRate: 3
+  maxRepeatRate: 5
+  xPosBoundary: 4
+  zPosBoundary: 4
+  xRange: 10
   minZRange: -10
   maxZRange: 10
   currentBlackholeCount: 0
   scaleFactor: 0
   minScale: 1.5
-  maxScale: 3.5
+  maxScale: 3
   newXPos: 0
   newZPos: 0
   blackholeCount: 10
