@@ -6,10 +6,12 @@ public class BlackHoleSfx : MonoBehaviour
 {
     [SerializeField] private AudioClip blackHoleSound;
     private AudioSource audioSource;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        // Initialize the audioSource
+        audioSource = gameObject.AddComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -17,13 +19,20 @@ public class BlackHoleSfx : MonoBehaviour
     {
         
     }
+
     public void PlayBlackHoleSound()
     {
-        audioSource.PlayOneShot(blackHoleSound);
+        if (audioSource != null && blackHoleSound != null)
+        {
+            audioSource.PlayOneShot(blackHoleSound);
+        }
     }
 
     public void StopBlackHoleSound()
     {
-        audioSource.Stop();
+        if (audioSource != null)
+        {
+            audioSource.Stop();
+        }
     }
 }
