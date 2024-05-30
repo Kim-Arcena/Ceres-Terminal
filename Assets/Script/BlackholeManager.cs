@@ -42,7 +42,7 @@ public class BlackholeManager : MonoBehaviour
         if (currentBlackholeCount < blackholeCount)
         {
             // AudioSource.PlayClipAtPoint(blackholeSound, transform.position);
-            // blackHoleSfx.PlayBlackHoleSound();
+            blackHoleSfx.PlayBlackHoleSound();
             bool isValidSpawnPosition = false;
             Vector3 newSpawnPos = Vector3.zero;
 
@@ -137,7 +137,7 @@ public class BlackholeManager : MonoBehaviour
 
         // Ensure the asteroid has reached its initial scale
         asteroidTransform.localScale = initialScale;
-        // blackHoleSfx.StopBlackHoleSound();
+        blackHoleSfx.StopBlackHoleSound();
         Destroy(asteroidTransform.gameObject);
     }
 }

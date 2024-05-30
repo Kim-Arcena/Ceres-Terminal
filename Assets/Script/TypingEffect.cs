@@ -20,9 +20,18 @@ public class TypingEffect : MonoBehaviour
     {
     }
 
+    public void SetFinalScore(string finalScore)
+    {
+        Debug.Log(finalScore);
+        lines[0] = finalScore;
+        StartDialogue();
+    }
+
     void StartDialogue()
     {
         index = 0;
+        textComponent.text = string.Empty;
+        StopAllCoroutines();
         StartCoroutine(TypeLine());
     }
 
@@ -34,8 +43,9 @@ public class TypingEffect : MonoBehaviour
             yield return new WaitForSeconds(textSpeed);
         }
 
-        if(gameObject.tag != "OneType"){
-            yield return new WaitForSeconds(3.5f);
+        if (gameObject.tag != "OneType")
+        {
+            yield return new WaitForSeconds(4f);
             StartCoroutine(UntypeLine());
         }
     }
