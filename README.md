@@ -1,5 +1,3 @@
-<!-- PROJECT LOGO -->
-<br />
 <div align="center">
   <a href="https://github.com/Kim-Arcena/TrackNGo/">
     <img src="https://github.com/Kim-Arcena/Ceres-Terminal/assets/70198061/898b0220-9cc8-4bbb-9267-a627255e422c" alt="Logo" width="80" height="80">
@@ -78,27 +76,26 @@
     <img src="https://github.com/Kim-Arcena/Ceres-Terminal/assets/70198061/9a019e4a-1e22-4713-bdd5-f9b8176bfe5e" alt="banner">
     <img src="https://github.com/Kim-Arcena/Ceres-Terminal/assets/70198061/5ab5e307-c63d-49d3-839b-4fdf240d78ce" alt="banner">
     <img src="https://github.com/Kim-Arcena/Ceres-Terminal/assets/70198061/26727f08-576c-43ad-95f1-5848ecf00aff" alt="banner">
-
   <br><br>
   
   <h4>Level 1</h4>
-     <img src="https://github.com/Kim-Arcena/Ceres-Terminal/assets/70198061/3837406f-37f3-4b29-92e8-135b29f017ca" alt="banner">
-    <img src="https://github.com/Kim-Arcena/Ceres-Terminal/assets/70198061/25a775d3-8ff1-4b0f-9c4a-76ad16e820bd" alt="banner">
+    <img src="https://github.com/Kim-Arcena/Ceres-Terminal/assets/70198061/af5e792c-1a81-45cf-9657-7428cf8e509c" alt="level1">
+    <img src="https://github.com/Kim-Arcena/Ceres-Terminal/assets/70198061/15cddfe3-b208-4518-9d34-0f7a33c31056" alt="level1">
   <br><br>
 
   <h4>Level 2</h4>
-   <img src="https://github.com/Kim-Arcena/Ceres-Terminal/assets/70198061/fe942679-eed4-4a38-9cf0-faf3f1b14202" alt="banner">
-   <img src="https://github.com/Kim-Arcena/Ceres-Terminal/assets/70198061/9e253834-67f5-46bc-be1b-e4f9b9cbd2a6" alt="banner">
-  <br><br>
-
-  <h4>Level 3</h4>
-   <img src="https://github.com/Kim-Arcena/Ceres-Terminal/assets/70198061/df6ff30d-33bf-44ec-817e-0b65f1d33f07" alt="banner">
-   <img src="https://github.com/Kim-Arcena/Ceres-Terminal/assets/70198061/e0d4e67f-2aa0-4278-9010-83504cd1a7bb" alt="banner">
+   <img src="https://github.com/Kim-Arcena/Ceres-Terminal/assets/70198061/9e253834-67f5-46bc-be1b-e4f9b9cbd2a6" alt="level 2 intro">
+   <img src="https://github.com/Kim-Arcena/Ceres-Terminal/assets/70198061/06c7a10d-4aa5-44c1-81fa-1ce65ebec8ed" alt="level2">
   <br><br>
   
+  <h4>Level 3</h4>
+   <img src="https://github.com/Kim-Arcena/Ceres-Terminal/assets/70198061/21c2210e-edb5-4415-9692-f3014c59ff1c" alt="level 3">
+   <img src="https://github.com/Kim-Arcena/Ceres-Terminal/assets/70198061/e92e6b73-4bed-4660-b472-138f0cf9eb87" alt="level 3">
+  <br><br>
+
   <h4>Level 4</h4>  
-   <img src="https://github.com/Kim-Arcena/Ceres-Terminal/assets/70198061/18544e16-87c8-4fa9-83f8-9a217f2d1b22" alt="banner">
-   <img src="https://github.com/Kim-Arcena/Ceres-Terminal/assets/70198061/79be81e7-2acd-46f6-be2d-34232e5ba07b" alt="banner">
+    <img src="https://github.com/Kim-Arcena/Ceres-Terminal/assets/70198061/eb01a79d-984f-40fd-b2e7-1673f698e5ca" alt="level 4">
+   <img src="https://github.com/Kim-Arcena/Ceres-Terminal/assets/70198061/1aa0d4b5-0a6e-4fd8-ad97-d9023e2ba6d9" alt="level 4">
 </div>
 
 <div>
