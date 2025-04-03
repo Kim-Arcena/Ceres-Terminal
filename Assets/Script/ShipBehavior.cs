@@ -1,6 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ShipBehavior : MonoBehaviour
 {
@@ -32,6 +35,11 @@ public class ShipBehavior : MonoBehaviour
         {
             Instantiate(explosion, transform.position, transform.rotation);
             playerManager.isAlive = false;
+                    // Deduct heart from ScoreManager
+            if (ScoreManager.Instance != null)
+            {
+                ScoreManager.Instance.DeductHeart();
+            }
             Destroy(collision.gameObject);
             Destroy(gameObject);
         }
