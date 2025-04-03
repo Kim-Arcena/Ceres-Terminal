@@ -42,7 +42,8 @@ public class ScoreManager : MonoBehaviour
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         sceneName = scene.name;
-        scoreText = GameObject.Find("Score").GetComponent<TextMeshProUGUI>();
+
+        scoreText = GameObject.Find("Score")?.GetComponent<TextMeshProUGUI>();
         heartText = GameObject.Find("Hearts")?.GetComponent<TextMeshProUGUI>();
 
         if (sceneName == "End Menu")
@@ -56,10 +57,12 @@ public class ScoreManager : MonoBehaviour
         }
         else
         {
+            score = cumulativeScore; // 👈 preserve score after respawn
             UpdateScoreText();
             UpdateHeartText();
         }
     }
+
     private void UpdateHeartText()
     {
         if (heartText != null)
@@ -105,7 +108,7 @@ public class ScoreManager : MonoBehaviour
     public void SetCurrentLevelStartScore()
     {
         currentLevelStartScore = cumulativeScore;
-        score = currentLevelStartScore;
+        score = cumulativeScore;
         UpdateScoreText();
     }
 
