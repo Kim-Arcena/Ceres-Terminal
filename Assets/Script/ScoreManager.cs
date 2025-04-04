@@ -70,7 +70,10 @@ public class ScoreManager : MonoBehaviour
             heartText.text = new string('♥', heartCount);
         }
     }
-
+    public int GetCumulativeScore()
+    {
+        return cumulativeScore;
+    }
     public void DeductHeart()
     {
         heartCount--;
