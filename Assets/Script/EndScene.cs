@@ -60,6 +60,8 @@ public class EndScene : MonoBehaviour
 
         AddScoreToLeaderboard(playerName, finalScoreValue);
         ShowScoreboard();
+        nameInputPanel.SetActive(false);
+
     }
 
     void AddScoreToLeaderboard(string name, int score)

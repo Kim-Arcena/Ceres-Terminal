@@ -43,12 +43,13 @@ public class TypingEffect : MonoBehaviour
             yield return new WaitForSeconds(textSpeed);
         }
 
-        if (gameObject.tag != "OneType")
+        if (gameObject.tag != "OneType" && gameObject.name != "Score")
         {
             yield return new WaitForSeconds(4f);
-            // StartCoroutine(UntypeLine());
+            StartCoroutine(UntypeLine());
         }
     }
+
 
     IEnumerator UntypeLine()
     {

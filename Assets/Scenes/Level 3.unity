@@ -835,6 +835,18 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 4e7920092e7be8f4e8d88060a7828fb0, type: 3}
     - target: {fileID: 8321382834590393589, guid: 9df3d45a37ae01d4a96089d24842fd94, type: 3}
+      propertyPath: rotateSpeed
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 8321382834590393589, guid: 9df3d45a37ae01d4a96089d24842fd94, type: 3}
+      propertyPath: acceleration
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8321382834590393589, guid: 9df3d45a37ae01d4a96089d24842fd94, type: 3}
+      propertyPath: maxMoveSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8321382834590393589, guid: 9df3d45a37ae01d4a96089d24842fd94, type: 3}
       propertyPath: accelarationSound
       value: 
       objectReference: {fileID: 8300000, guid: 8c4ed8371847d25448620c41b867a84c, type: 3}
