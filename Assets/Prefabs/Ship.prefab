@@ -108,6 +108,8 @@ MonoBehaviour:
   spawnBullet: {fileID: 845007861570137618}
   bulletPrefab: {fileID: 8449798723006539125, guid: 2c98ed724d2ed5a44b60e5f8a13cd96c, type: 3}
   bulletSpeed: 20
+  bulletSound: {fileID: 8300000, guid: 4e7920092e7be8f4e8d88060a7828fb0, type: 3}
+  isAlive: 1
 --- !u!114 &8701219078571895494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -120,6 +122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0055792875a2a2b98bda8ae17a23d2cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buffer: 0.1
 --- !u!54 &801109180564667796
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -180,6 +183,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 535784fffba6abb448e648def49ce86a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosion: {fileID: 0}
+  accelarationSound: {fileID: 8300000, guid: 8c4ed8371847d25448620c41b867a84c, type: 3}
 --- !u!1 &6514171303392152281
 GameObject:
   m_ObjectHideFlags: 0

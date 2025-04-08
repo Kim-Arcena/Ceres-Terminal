@@ -13,8 +13,8 @@ public class ScoreManager : MonoBehaviour
     private int cumulativeScore = 0;
     private int currentLevelStartScore = 0;
     private int score = 0;
-    private String hearts = "♥♥♥♥♥♥";
-    private int heartCount = 5;
+    private String hearts = "♥♥♥";
+    private int heartCount = 3;
     private TypingEffect typingEffect;
     [SerializeField] TextMeshProUGUI heartText;
     [SerializeField] private string sceneName;
