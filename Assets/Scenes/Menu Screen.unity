@@ -292,7 +292,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.04680951, y: 10, z: 10.6}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 11.6}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -306,11 +306,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 394878496}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b52531b42fa524cdaefeb1d534623ff, type: 3}
+  m_Script: {fileID: 11500000, guid: 946e9d954180d9e4d84533f73edf577a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Tutorial
-  skipToSceneName: Level 1
+  sceneName: 
+  skipToSceneName: 
   confirmationDialog: {fileID: 1752229053}
   yesButton: {fileID: 1619435771}
   noButton: {fileID: 2057813119}
@@ -671,6 +671,7 @@ GameObject:
   - component: {fileID: 919375611}
   - component: {fileID: 919375610}
   - component: {fileID: 919375609}
+  - component: {fileID: 919375612}
   m_Layer: 0
   m_Name: GameObject (2)
   m_TagString: Untagged
@@ -690,11 +691,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b52531b42fa524cdaefeb1d534623ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Tutorial
-  skipToSceneName: Level 1
-  confirmationDialog: {fileID: 1752229053}
-  yesButton: {fileID: 1619435771}
-  noButton: {fileID: 2057813119}
+  scenename: 
 --- !u!65 &919375610
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -731,6 +728,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &919375612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919375608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 946e9d954180d9e4d84533f73edf577a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: 
+  skipToSceneName: 
+  confirmationDialog: {fileID: 1752229053}
+  yesButton: {fileID: 1619435771}
+  noButton: {fileID: 2057813119}
 --- !u!1 &924697110
 GameObject:
   m_ObjectHideFlags: 0
@@ -2258,6 +2272,7 @@ GameObject:
   - component: {fileID: 1848368396}
   - component: {fileID: 1848368395}
   - component: {fileID: 1848368394}
+  - component: {fileID: 1848368397}
   m_Layer: 0
   m_Name: GameObject (1)
   m_TagString: Untagged
@@ -2277,11 +2292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b52531b42fa524cdaefeb1d534623ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Tutorial
-  skipToSceneName: Level 1
-  confirmationDialog: {fileID: 1752229053}
-  yesButton: {fileID: 1619435771}
-  noButton: {fileID: 2057813119}
+  scenename: 
 --- !u!65 &1848368395
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2318,6 +2329,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1848368397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848368393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 946e9d954180d9e4d84533f73edf577a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: 
+  skipToSceneName: 
+  confirmationDialog: {fileID: 1752229053}
+  yesButton: {fileID: 1619435771}
+  noButton: {fileID: 2057813119}
 --- !u!1 &1871648974 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8183531249238065197, guid: cb2ced2661f06bf71a917f46f0d25261, type: 3}
@@ -2382,6 +2410,7 @@ GameObject:
   - component: {fileID: 2007128681}
   - component: {fileID: 2007128680}
   - component: {fileID: 2007128679}
+  - component: {fileID: 2007128682}
   m_Layer: 0
   m_Name: GameObject (3)
   m_TagString: Untagged
@@ -2401,11 +2430,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b52531b42fa524cdaefeb1d534623ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Tutorial
-  skipToSceneName: Level 1
-  confirmationDialog: {fileID: 1752229053}
-  yesButton: {fileID: 1619435771}
-  noButton: {fileID: 2057813119}
+  scenename: 
 --- !u!65 &2007128680
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2442,6 +2467,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &2007128682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007128678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 946e9d954180d9e4d84533f73edf577a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: Tutorial
+  skipToSceneName: Level 1
+  confirmationDialog: {fileID: 1752229053}
+  yesButton: {fileID: 1619435771}
+  noButton: {fileID: 2057813119}
 --- !u!1 &2057813118
 GameObject:
   m_ObjectHideFlags: 0

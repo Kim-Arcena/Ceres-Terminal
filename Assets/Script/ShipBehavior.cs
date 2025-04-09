@@ -31,7 +31,7 @@ public class ShipBehavior : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.CompareTag("Obstacle"))
+        if(collision.gameObject.CompareTag("Obstacle") || collision.gameObject.CompareTag("BlackHole"))
         {
             Instantiate(explosion, transform.position, transform.rotation);
             playerManager.isAlive = false;

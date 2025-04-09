@@ -44,6 +44,8 @@ public class EndScene : MonoBehaviour
 
         // Ask for name input after short delay
         Invoke("AskForName", 4f);
+
+        Invoke("AskToContinue", 5f);
     }
 
 
